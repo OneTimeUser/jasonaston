@@ -1,0 +1,31 @@
+Title: Week 10: HTML5 API, Scripting APIs and Mobile Web
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Lecture**
+
+Today we will be chatting about (link: https://developer.mozilla.org/en-US/docs/Web/API text: HTML5 API’s) to get data from sensors like GPS, accelerometers, etc. Unfortunately not all browsers and devices allow access to these features, checkout (link: caniuse.com text: caniuse.com) to check to see if what you want to use works for the device/browser you want to use it on. We will also briefly talk about scripting API’s like (link: https://jqueryui.com/ text: jQuery UI) and (link: https://modernizr.com/ text: Modernizr). And we will be covering how to best optimize your website to work on mobile and tablet devices.
+
+Examples:
+Geolocation – HTTP and HTTPS (Now only works for HTTPS)
+Local Storage
+Video Input – HTTP and HTTPS (Now only works for HTTPS)
+Audio Input- HTTP and HTTPS (Now only works for HTTPS)
+Gyroscope / Accelerometer
+Virtual Reality
+jQuery UI
+Mobile Template
+
+**In Class Assignment
+**
+Experiment with HTML5 APIs and Scripting APIs like jQuery UI.
+
+**Homework**
+
+Finalize you final project idea and design static layouts for your website or mobile web app. Also write out a game plan for how you will be programming it and what (if any) third party API’s, JavaScript frameworks or HTML5 API elements you will be using. Be prepared to present your designs in class next week.

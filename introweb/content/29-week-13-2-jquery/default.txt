@@ -1,0 +1,141 @@
+Title: Week 13-2:JQuery
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+Jquery is a javascript file in your web pages that lets you find elements using css-style selectors and then do something else. It is one step in encoding interactivity to your webpages. 
+
+The following is a simple example of writing a JQuery object:
+`$(‘li.hot’)` 
+This example uses a `$` which means "JQuery". Then there is selector inside parentheses which is used to locate the element to be acted on.  Thus, the example reads,"JQuery, get me all list items with a class of hot".
+
+So the jQuery object returns an item or group of items so that you can then apply a Jquery function to, like in the following example:
+
+`$(‘li.hot’).addClass(‘complete’)`
+
+The `.` is the member operator which says whatever is on the right should update whatever is on the left. In this example, `addClass()` is the method/function that adds a class name to an element. There are many methods you can use and some of these take parameters, some mandatory and some optional. So `addClass()` takes a parameter and that is a string (text) which is the name of the additional class.
+
+***Starting out***
+There are a few different ways to include JQuery in your project. If you remember from bootstrap lessons, we had to include JQuery in order to get our bootstrap to work correctly. So if you are using bootstrap, then you do not need to worry about the following. If not, then look at the examples below.
+
+The following example assumes you have downloaded the JQuery javascript files from the jquery website and you have them in a scriptsfolder in your project folder.
+```
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    HTML HERE
+
+<script src="scripts/jquery.js"></script>
+    <script>
+ 
+    // Your javascript/JQuery code goes here.
+ 
+    </script>
+</body>
+</html>
+```
+You can also link directly to the hosted code (similar to the code from bootstrap). Look back at the previous lessons on how and where to do that. 
+
+Scripts should usually be located after all of the HTML in your `<body>` element (all of your visible stuff) just before the closing body tag.
+ 
+To run code as soon as the document is ready to be manipulated, jQuery has a statement known as the ready event:
+```
+$( document ).ready(function() {
+ 
+    // Your code here.
+ 
+});
+```
+Like so:
+```
+$( document ).ready(function() {
+ 
+    $( "a" ).click(function( event ) {
+ 
+        alert( "Thanks for visiting!" );
+ 
+    });
+ 
+});
+```
+
+To keep things clean...you can also move all of his jS into a separate file and then link to it.
+``` 
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/myJS.js"></script>
+```
+Try copying, pasting, and modifying some of these examples:
+Place this in the body element:
+```
+<h1 id="header">LIST</h1>
+        <h2>Buy Groceries</h2>
+        <ul>
+            <li>Milk</li>
+            <li>Eggs</li>
+        </ul>
+```
+Place this just before the closing body tag:
+```
+$('#header').addClass('headline');
+            $('li:first-child').hide().fadeIn(1500);
+            $('li').on('click', function() {
+                $(this).remove();
+            });
+```
+_______
+Place this in the body element
+```
+<p></p>
+    <div id="image"></div>
+```
+Place this just before the closing body tag:
+```
+$("p").text('Hello, jQuery!');
+      $('#image').html('<img src="star.png">');
+      $('body').css('background-color', 'gray');
+      $('p').css('color', 'magenta');
+      $('#image').hide();
+      $('#image').fadeIn('slow');
+```
+________
+The following includes a style, HTML, and JQuery. Place everything where appropriate.
+```
+#square {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+}
+```
+```
+<div id="square"></div>
+    <ul>
+      <li id="red"><a href="#">Red square</a></li>
+      <li id="blue"><a href="#">Blue square</a></li>
+      <li id="clear"><a href="#">Clear square</a></li>
+    </ul>
+```
+```
+$('#red').click(function() {
+    $('#square').css('background-color', 'red');
+  });
+
+  $('#blue').click(function() {
+    $('#square').css('background-color', 'blue');
+  });
+
+  $('#clear').click(function() {
+    $('#square').css('background-color', 'transparent');
+  });
+```
+
+(file:jquery.pptx.pdf text: Presentation Slides)

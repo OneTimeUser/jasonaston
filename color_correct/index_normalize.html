@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		
+		
+		
+		function imageLoaded(ev) {
+		    element = document.getElementById("canvas1");
+		    c = element.getContext("2d");
+		
+		    im = ev.target; // the image
+		
+		    // read the width and height of the canvas
+		    width = element.width;
+		    height = element.height;
+			
+		    // stamp the image on the left of the canvas:
+		    c.drawImage(im, 0, 0);
+		    // get all canvas pixel data
+		    imageData = c.getImageData(0, 0, width, height);
+		
+		    w2 = width / 2;
+			var reds = new Array();
+			var greens = new Array();
+			var blues = new Array();
+			
+			var freqR = new Array();
+			var freqG = new Array();
+			var freqB = new Array();
+			
+			//CUSTOM ADJUSTMENT VARIABLES FOR TWEAKING TINTS AND TEMPERATURE
+			var rVar = 1.2;
+			var gVar = .85;//.938;
+			var bVar = .80;//.91; 
+			
+			if (imageData){
+				
+				buildHistograms(reds, greens,blues);
+				
+				buildFrequencies(reds, greens, blues, freqR, freqG, freqB);
+
+			}
+			
+			var alpha = 255/(w2*height);
+			
+			 // run through the image
+		    for (y = 0; y < height; y++) {
+		        inpos = y * width * 4; // *4 for 4 ints per pixel
+		        outpos = inpos + w2 * 4;
+		        for (x = 0; x < w2; x++) {
+
+		        	
+		        	//reads pixel data(of img c)to each channel of rgb
+		            r = imageData.data[inpos++];  /// 3; // less red
+		            g = imageData.data[inpos++]; /// 3; // less green
+		            b = imageData.data[inpos++];//* 5; // MORE BLUE
+		            a = imageData.data[inpos++];     // same alpha
+		
+		            //using histogram eqalization formula: equalized value = (cdf-cdfmin/(w*h)-cdfmin)*(grayLevels -1)
+
+		            adjR = freqR[r]*alpha;
+		            adjG = freqG[g]*alpha;
+		            adjB = freqB[b]*alpha;
+
+		            
+		            
+		            //custom adjustments to the normalization (which tends blueish)
+		            newR = adjR*rVar;
+		            newG = adjG*bVar;
+		            newB = adjB*gVar;
+		            
+		            
+		            newR= Math.min(255, newR);
+
+
+				
+					//do other stuff here or above before moving on to write 
+					
+					//assigns pixel data of output image
+		            imageData.data[outpos++] = newR;//r;//r
+		            imageData.data[outpos++] = newG;//g;
+		            imageData.data[outpos++] = newB;//b;
+		            imageData.data[outpos++] = a;
+		        }
+		    }
+		    // put pixel data on canvas
+		    c.putImageData(imageData, 0,0);
+		    
+		}
+			
+		im = new Image();
+		im.onload = imageLoaded;
+		im.src = "Lenna4.jpg"; // code assumes this image is 200x200
+		
+		function buildHistograms(reds,greens,blues){
+			//run through image building histogram		
+			for (y=0; y < height; y++){
+				inpos = y * width *4;
+				for (x=0; x < w2; x++){
+					rd = imageData.data[inpos++]; 
+		            g = imageData.data[inpos++];
+		            b = imageData.data[inpos++];
+		            a = imageData.data[inpos++];
+		            // Add counts to our histogram arrays for each color.
+		            reds.push(rd);
+		            greens.push(g);
+		            blues.push(b);
+				}
+			}
+			
+			// Sort them by keys into order
+
+			reds.sort(function(a,b){return a-b});
+			greens.sort(function(a,b){return a-b});
+			blues.sort(function(a,b){return a-b});
+
+					
+		}
+		
+		function buildFrequencies(reds, greens, blues, freqR, freqG, freqB){
+		// Build frequency charts for all colors: takes REDS GREENS BLUES from buildHistograms and places them on top of each other accordingly
+		var len = reds.length;
+			
+				
+				for (j=0; j < len; j++) {
+				        var rCurrVal = reds[j];
+				        var gCurrVal = greens[j];
+				        var bCurrVal = blues[j];
+				        if (freqR.hasOwnProperty(rCurrVal)) {
+				            freqR[rCurrVal] += 1;
+				        }   else {
+				           freqR[rCurrVal] = 1;
+				        } 
+				        if (freqG.hasOwnProperty(gCurrVal)) {
+				            freqG[gCurrVal] += 1;
+				        }   else {
+				           freqG[gCurrVal] = 1;
+				        }
+				        if (freqB.hasOwnProperty(bCurrVal)) {
+				            freqB[bCurrVal] += 1;
+				        }   else {
+				           freqB[bCurrVal] = 1;
+				        }
+				}
+				
+				
+				for (i=0; i<255; i++){   
+					if ($.inArray(i,reds)===-1){freqR[i]=0;}
+					if ($.inArray(i,greens)=== -1){freqG[i]=0;}
+					if ($.inArray(i,blues)=== -1){freqB[i]=0;}
+					
+					if (i>0){
+						freqR[i]+=freqR[i-1];
+						freqG[i]+=freqG[i-1];
+						freqB[i]+=freqB[i-1];
+					
+					}
+				}
+		
+/*
+			for(i=0; i<=255; i++){
+				sumR=0;
+				sumG=0;
+				sumB=0;
+				
+				for(j=0; j<= i; j++){
+					if (reds[j]){sumR+=reds[j];}
+					if (greens[j]){sumG+=greens[j];}
+					if (blues[j]){sumB+=blues[j];}
+				}
+				
+				freqR[i] = sumR;
+				freqG[i] = sumG;
+				freqB[i] = sumB;
+			
+			}
+*/
+		}
+
+	
+	</script>
+
+</head>
+<body>
+	<canvas id="canvas1" width="1024", height="512"></canvas>
+</body>
+</html>

@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+html {
+background-image: url(media/bg.jpg);
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-color: #555;
+color: #fff;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: white;
+  color: #333;
+  font-family: monospace;
+}
+
+.flickity-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  /* Flexbox-Container-Settings */
+}
+.flickity-fullscreen img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  width: auto;
+}
+
+.flickity-fullscreen video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+.flickity-fullscreen .flickity-viewport {
+  width: 100% !important;
+  height: 100% !important;
+}
+.flickity-fullscreen .gallery-cell {
+  width: 33.3%;
+  height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flickity-fullscreen .gallery-cell.large{
+  width:53%;
+}
+.flickity-fullscreen .gallery-cell.vid{
+  width:53%;
+}
+
+.flickity-fullscreen .gallery-cell > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.flickity-fullscreen .gallery-cell > div img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  max-width: 48%;
+  max-height: 48%;
+  margin: 1%;
+}
+.flickity-fullscreen .flickity-page-dots {
+  bottom: 0px;
+  z-index: 9999;
+}
+.flickity-fullscreen .flickity-page-dots .dot {
+  width: 3%;
+  min-width: 5px;
+  height: 15px;
+  opacity: 1;
+  background: transparent;
+  border-top: 3px solid #000;
+  opacity: 0.3;
+  border-radius: 0;
+  margin: 0;
+}
+.flickity-fullscreen .flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+#logo img {
+  position: absolute;
+  max-width: 65%;
+  z-index: 999;
+}
+
+#logo img:empty {
+  top: 50%;
+  left: 36%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

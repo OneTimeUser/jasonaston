@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<style type="text/css">
+
+</style>
+  <meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="megapix.js"></script>
+	<script type="text/javascript">
+
+		
+		//need to shrink size of image coming in from iphone
+		
+		function imageLoaded(ev) {
+
+		    
+		
+		    
+		
+		    element = document.getElementById("canvas1");
+		
+		    c = element.getContext("2d");
+		
+		    im = ev.target;
+		
+		    // read the width and height of the canvas
+		
+		    width = element.width=250;
+		
+		    height = element.height=94;
+		
+		
+		    //used for side by side comparison of images
+		
+		    w2 = width / 2;
+		
+		    console.log("H= "+height+"  W= "+width);
+		
+		    var mpImg, newImg;
+		
+		    
+		
+		    if (detectSubsampling(this)){
+				
+		        console.log("I'm subsampled");
+	
+		        mpImg = new MegaPixImage(this);
+		        	        
+		        mpImg.render(image, {maxWidth:125, maxHeight:94});//
+		        
+		        //mpImgData = element.toDataURL("image/jpg");
+		        //newImg = document.createElement("img");
+		        //newImg.src=mpImgData;
+		        console.log("resend to imageLoaded");
+		        imageLoaded(mpImg);
+		        
+		        return;
+
+		
+		    }
+		
+		    //printSub(c);	
+		
+		    // stamp the image on the left of the canvas and set width/height for resizing primarily for Iphone ratio
+			console.log("Subsampling detected = "+detected);
+		    
+			if (detected === false){
+		
+		    	c.drawImage(im, 0, 0,125,94);//iphone4 94x125 or w2,height  4s94x800 yields square
+			} else{
+				newImg = document.getElementById("image");
+				c.drawImage(newImg,0,0,125,94);
+			}
+		    
+			
+		    console.log("passed");
+		
+		    // get all canvas pixel data***
+		
+		    imageData = c.getImageData(0, 0, width, height);
+		
+		    
+		
+		    //var for getting channel values mins and maxs for histogram stretch
+		
+		    rMin = 255;
+		
+		    gMin = 255;
+		
+		    bMin = 255;
+		
+		    rMax = 0;
+		
+		    gMax = 0;
+		
+		    bMax = 0;
+		
+		    
+		
+		    var reds = new Array();
+		
+		    var greens = new Array();
+		
+		    var blues = new Array();
+		
+		    
+		
+		    //dist correlates to thresholds for mapping function(the distance away from white)
+		
+		    dist = 0;
+		
+		    
+		
+		    //compares against dist to find the lowest distance number
+		
+		    comp=50;
+		
+		    
+		
+		    //outputs a number 0-17 (prints 1-18) that corresponds to one of 18 shades of FITME
+		
+		    match=0;
+		
+		    
+		
+		    //	 //gbDiff is used to map to warm or cool tone
+		
+		    //	 gbDiff = 0;
+		
+		    //	 //undertone measures coolness or warmth
+		
+		    //	 uTone = false;
+		
+		    
+		
+		    
+		
+		    
+		
+		    //used to get min and max for each channel for simple color bal- prone to error- check for freq of min max to eliminate errant min or max pix
+		
+		    for (y=0; y < height; y++){
+		
+		        inpos = y * width *4;
+		
+		        for (x=0; x < w2; x++){
+		
+		            rd = imageData.data[inpos++];
+		
+		            g = imageData.data[inpos++];
+		
+		            b = imageData.data[inpos++];
+		
+		            a = imageData.data[inpos++];
+		
+		            
+		
+		            if (rMin > rd){rMin=rd;}
+		
+		            if (gMin > g){gMin=g;}
+		
+		            if (bMin > b){bMin=b;}
+		
+		            if (rMax < rd){rMax=rd;}
+		
+		            if (gMax < g){gMax=g;}
+		
+		            if (bMax < b){bMax=b;}
+		
+		            
+		
+		            
+		
+		        }
+		
+		    }
+		
+		    console.log(rMax+"<-max and min-> "+rMin);
+		
+		    // run through the image
+		
+		    for (y = 0; y < height; y++) {
+		
+		        inpos = y * width * 4; // *4 for 4 ints per pixel
+		
+		        outpos = inpos + w2 * 4;
+		
+		        for (x = 0; x < w2; x++) {
+		
+		            
+		
+		            
+		
+		            //reads pixel data(of img c)to each channel of rgb
+		
+		            //adjusts values according to mins/maxs
+		
+		            r = ((imageData.data[inpos++]-rMin)/(rMax - rMin))*255;
+		
+		            g = ((imageData.data[inpos++]-gMin)/(gMax - gMin))*255;
+		
+		            b = ((imageData.data[inpos++]-bMin)/(bMax - bMin))*255;
+		
+		            a = imageData.data[inpos++];     // same alpha
+		
+		            
+		
+		            
+		
+		            //assigns pixel data of output image
+		
+		            imageData.data[outpos++] = r;
+		
+		            imageData.data[outpos++] = g;
+		
+		            imageData.data[outpos++] = b;
+		
+		            imageData.data[outpos++] = a;
+		
+		        }
+		
+		    }
+		
+		    
+		
+		    // put pixel data on canvas side by side, og image and new image
+		
+		    c.putImageData(imageData, 0,0);
+		
+		    console.log("Drew both images!");
+		
+		    //then run averaging function that finds average and spits out color difference  on NEW image
+		
+		    //new imageData for corrected image at center 16
+		
+		    top= (height/2)-2;
+		
+		    left=(width/2)+(width/4)-2;
+		
+		    
+		
+		    newData = c.getImageData(left,top,4,4);//(254,764, 4, 4);
+		
+		    
+		
+		    for (y=0; y < 4; y++){
+		
+		        inpos = y * 4 *4; //y*sampleWidth*data array
+		
+		        for (x=0; x < 4; x++){
+		
+		            targetR = newData.data[inpos++];
+		
+		            targetG = newData.data[inpos++];
+		
+		            targetB = newData.data[inpos++];
+		
+		            targetA = newData.data[inpos++];
+		
+		            // Add counts to our histogram arrays for each color.
+		
+		            if (targetR > targetG && targetG > targetB){
+		
+		                reds.push(targetR);
+		
+		                greens.push(targetG);
+		
+		                blues.push(targetB);
+		
+		            }
+		
+		        }
+		
+		    }
+		
+		    
+		
+		    c.putImageData(newData, left, top);
+			console.log("Selection captured!");
+		    //finds the target average rgb and applies distance from white function
+		
+		    findAvgAndDist(reds, greens, blues);
+		    console.log("Have averages and such!");
+
+		
+		    
+		
+		    
+		
+		}
+		
+		
+		
+		function findAvgAndDist(reds, greens, blues) {
+		
+		    var r_ = 0;
+		
+		    var g_ = 0;
+		
+		    var b_ = 0;
+		
+		    var newR=0;
+		
+		    var newG=0;
+		
+		    var newB=0;
+		
+		    
+		
+		    //creates sums of values in reds greens blues
+		
+		    for (var i = 0; i < reds.length; i++) {
+		
+		        r_ += parseInt(reds[i]);
+		
+		        g_ += parseInt(greens[i]);
+		
+		        b_ += parseInt(blues[i]);
+		
+		    }
+		
+		    //creates average
+		
+		    r_/=reds.length;
+		
+		    g_/=greens.length;
+		
+		    b_/=blues.length;
+		
+		    
+		
+		    //simple skin checker
+		
+		    //if this checkes false then user should retake photo
+		
+		    if (r_-g_ > 7 && r_ > g_ && g_ > b_){
+		
+		        console.log("Skin!");
+		
+		    } else {console.log("Not Skin!");}
+		
+		    
+		
+		    //normal values coming in
+		
+/*
+		    var lR     =70;
+		
+		    var hR     =255;
+		
+		    var lG     =40;
+		
+		    var hG     =235;
+		
+		    var lB     =35;
+		
+		    var hB     =230;
+*/
+		
+		    
+		
+		    //mapped values according to FitMe
+		
+/*
+		    var lowR    =130;
+		
+		    var highR   =215;
+		
+		    var lowG    =90;
+		
+		    var highG   =190;
+		
+		    var lowB    =60;
+		
+		    var highB   =165;
+		
+		
+		
+		    newR=mapRange(r_,lR,hR,lowR,highR);//Math.round(
+		
+		    newG=mapRange(g_,lG,hG,lowG,highG);
+		
+		    newB=mapRange(b_,lB,hB,lowB,highB);
+		
+*/
+		
+		
+		    var fitR = new Array(249,237,222,210,209,209,208,208,199,197,197,193,183,172,169,153,148,126);
+    		var fitG = new Array(227,209,198,184,173,173,170,168,177,161,159,155,130,116,128,113,110,88);
+    		var fitB = new Array(221,179,168,156,133,136,127,122,162,145,136,133,105,85,94,76,79,59);
+		
+/*
+		    //to find closest match
+		
+		    var fitR = new Array(201,199,189,187,182,
+		
+		                         183,179,177,183,177,
+		
+		                         176,179,173,171,160,
+		
+		                         179,152,151);
+		
+		    var fitG = new Array(173,167,159,152,146,
+		
+		                         146,146,145,146,136,
+		
+		                         137,136,139,129,118,
+		
+		                         134,111,108);
+		
+		    var fitB = new Array(149,146,135,129,121,
+		
+		                         123,118,117,123,108,
+		
+		                         110,110,111,103,90,
+		
+		                         114,84,82);
+*/
+		
+		    
+		
+		    
+		
+		    
+		
+		    //distance from white formula (subtracted number is the color to compare
+		
+		    for (i=0; i < fitR.length; i++){
+		
+		        rr = (r_ + 250)/2;
+		
+		        diffR = r_ - fitR[i];
+		
+		        diffG = g_ - fitG[i];
+		
+		        diffB = b_ - fitB[i];;
+		
+		        
+		
+		        dist = Math.sqrt((2 + (rr/256)) *(diffR * diffR) + 4 *(diffG * diffG) +(2 + (255 - rr) / 256) *(diffB * diffB)) / 100;
+		
+		        
+		
+		        if (dist < comp){
+		
+		            comp=dist;
+		
+		            match=i;
+		
+		            
+		
+		        }
+		
+		        
+		
+		    }
+		
+		    printRGB(r_,g_,b_,newR,newG,newB,match,comp);
+		
+		}
+		
+		
+		
+		function detectSubsampling(img) {
+			console.log("detecting subsample");
+		    var iw = img.naturalWidth,
+		
+		    ih = img.naturalHeight,
+		
+		    ssCanvas,
+		
+		    ssCTX;
+		
+		    if (iw * ih > 1024 * 1024) { // Subsampling may happen over megapixel image
+		
+		        console.log("I'm a big pic!");
+		        ssCanvas = document.createElement('canvas');
+		
+		        ssCanvas.width = ssCanvas.height = 1;
+		
+		        ssCTX = ssCanvas.getContext('2d');
+		
+		        ssCTX.drawImage(img, -iw + 1, 0);
+		
+		        // Subsampled image becomes half smaller in rendering size.
+		
+		        // Check alpha channel value to confirm image is covering edge pixel or not.
+		
+		        // If alpha value is 0 image is not covering, hence subsampled.
+				
+		        if(ssCTX.getImageData(0, 0, 1, 1).data[3] === 0){
+		        	detected = true;
+		        	return true;} else {detected = false;}
+		
+		    }
+			console.log("Not Subsampled");
+			
+		    return false;
+		
+		}
+		
+		                  
+		
+		
+		
+		function mapRange(value, low1, high1, low2, high2) {
+		
+		    return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+		
+		}
+		
+		
+		
+		function printRGB(r,g,b,newR,newG,newB,match,comp){
+		
+		    var j = document.getElementById('rgb');
+		
+		    j.innerHTML= 'R'+r+' G'+g+' B'+b+ ' Avg'+((r+g+b)/3)+'</br>'+'Match= '+(match+1)+'  Distance='+comp;
+		
+		}
+		
+		function printSub(){
+			var k = document.getElementById('distance');
+			k.innerHTML= ' image is subsampled and element name is '+c;
+		}
+
+
+			
+		im = new Image();
+		im.onload = imageLoaded;
+		im.src = "img/Lenna_4.jpg"; //Original image being used
+		
+			
+						
+		
+		
+	
+	</script>
+
+</head>
+<body>
+	<div style="z-index:10">
+
+	</div>
+	<canvas id="canvas1"></canvas>
+	<img id="image"></img>
+	<div id="rgb" style="color:black; font-size:12px">0</div>
+    <div id="distance" style="color:black; font-size:12px">0</div>
+
+</body>
+</html>

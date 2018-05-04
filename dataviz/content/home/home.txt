@@ -1,0 +1,67 @@
+Title: Home
+
+----
+
+Head-title: Class Overview
+
+----
+
+Head-text: 
+
+<strong>
+Parsons School of Design
+Art Media Technology
+PSAM 5010 - B
+RN: 6735
+FALL 2017
+Day: Monday 
+Time: 7:00 p.m. - 9:40 p.m.
+Location: Parsons 2 W 13th
+Room: 401
+</strong>
+
+###Course Description###
+This is a seminal course on information design and aesthetics. Students will study graphical theory, graph grammar, and investigate hierarchies, patterns, and relationships in data structures. Students will examine the role of scale, proportion, color, form, structure, motion, and composition in data visualization. Using computational methods, students will create drawings, graphs, indexes, and maps that explore the database as cultural form. The function of this course is to build a community among the students and orient them to the whole program.
+
+###Context###
+This course is an introduction to data visualization, promoting data literacy and visualization competencies for visual artists, designers, and analysts. With a focus on social engagement, this course prepares students with the critical skills to advocate visually and the intellectual context to engage a world in which data increasingly shapes opinion, policy, and decision making.
+
+Students will learn to curate and uncover insights from large and complex data sets. Using cloud-based visualization platforms, digital design software, or paper prototyping techniques, students will create drawings, graphs, indexes, and maps. Students will familiarize themselves with the necessary vocabulary to communicate and collaborate with data visualization professionals in future contexts. Throughout the course, students work with Canvas to collect and share resources and submit assignments. A series of presentations, screenings, readings, and discussions exposes students to artists and designers working in the context of data visualization and the digital arts. Each student will select a research topic, and present a research report in conjunction with an in-class discussion.
+
+Assignments are invitations to invent and experiment. Creative and ambitious experiments are evaluated high, while obvious and easily attained solutions are evaluated low. The complexity of the assignments increases as the semester progresses. Students are required to document their iterative design process and have process documents available to share during each class session. Active contribution during class is required. All assignments must be completed to pass the course. Assignments are only considered complete when available on Canvas. Late assignments and attendance will reduce grades proportionally. 
+
+###Learning Outcomes###
+-Develop a deep understanding of the various methods and techniques of modern data visualization, as well as its historical context. 
+-Develop skills to design effective visual communication and information displays, by learning a framework for educated exploration and invention. 
+-Gain experience in describing, analyzing, and evaluating various data visualization approaches through recurrent presentations and critiques. 
+
+###Assessable Tasks###
+LATCH Assignment(due: week 4)
+Midterm Project: Visualize quantities, categories and summarized data (due: week 8)
+In Class Rapid Visualization Assignments (due: weekly)
+Document research and design process in the Learning Portfolio (due weekly)
+Collect sources for the final project (due: week 10)
+Develop a proposal for the final project (due: week 11)
+Create a prototype for the final project (due: week 13)
+Create and Demonstrate the final project (due: week 15)
+
+###Readings###
+(link: http://jason-aston.com/dataviz/resources text: Please see Readings section on resource page)
+
+###Course Requirements###
+Class participation is mandatory. You are expected to be present; to participate in a positive, constructive manner; and to produce work that is full of energy and completed and presented to the best of your ability.
+
+It is your responsibility to turn in work on time, to make up any missed assignments, and to catch up with the class in the event of an absence. Late work is unacceptable; however, this work turned in for partial credit. If you know you are going to be absent, contact the professor by email in advance.
+
+This is a hands-on course, and regular attendance is necessary for participation. You will be graded on in-class participation. If you know you are going to be absent, contact the professor by email in advance. Students who miss numerous classes will find it difficult to pass the course. Visual assignments and projects will be graded based on: one for technical merit, concept and your demonstrated ability to understand the material. You are expected to spend as much time working outside the classroom as you work inside the classroom. Schedule your time accordingly.
+
+You will need to have a notebook or sketchbook that you will be expected to bring to every class. It is probably a good idea to have a 4gb or larger thumbdrive to transfer digital files.
+
+###Professor Info###
+Name: Jason Aston
+Email: astoj809@newschool.edu
+Office Hours: by appointment, on or off campus nearby.
+
+----
+
+Tiles: 

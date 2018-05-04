@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		
+		//need to shrink size of image coming in from iphone
+		
+		function imageLoaded(ev) {
+		    element = document.getElementById("canvas1");
+		    c = element.getContext("2d");
+		
+		    im = ev.target; // the image
+
+		
+		    // read the width and height of the canvas
+		    width = element.width;
+		    height = element.height;
+						
+			//used for side by side comparison of images
+		    w2 = width / 2;
+		    
+		    // stamp the image on the left of the canvas and set width/height for resizing primarily for Iphone ratio
+		    c.drawImage(im, 0, 0, w2, height);
+		    
+		    // get all canvas pixel data
+		    imageData = c.getImageData(0, 0, width, height);
+			
+
+		    
+		    //var for getting channel values mins and maxs for histogram stretch
+		    rMin = 255;
+		    gMin = 255;
+		    bMin = 255;
+		    rMax = 0;
+		    gMax = 0;
+		    bMax = 0;
+		    
+		    var reds = new Array();
+			var greens = new Array();
+			var blues = new Array();
+			
+			//dist correlates to thresholds for mapping function(the distance away from white) 
+			dist = 0;
+			//gbDiff is used to map to warm or cool tone
+			gbDiff = 0;
+			//undertone measures coolness or warmth
+			uTone = false;	
+				
+			//used to get min and max for each channel for simple color bal- prone to error- check for freq of min max to eliminate errant min or max pix
+			for (y=0; y < height; y++){
+				inpos = y * width *4;
+				for (x=0; x < w2; x++){
+					rd = imageData.data[inpos++]; 
+		            g = imageData.data[inpos++]; 
+		            b = imageData.data[inpos++];
+		            a = imageData.data[inpos++];
+		           
+		            if (rMin > rd){rMin=rd;}
+		            if (gMin > g){gMin=g;}
+		            if (bMin > b){bMin=b;}
+		            if (rMax < rd){rMax=rd;}
+		            if (gMax < g){gMax=g;}
+		            if (bMax < b){bMax=b;}	            
+		            
+
+				}
+			}
+			
+			 // run through the image
+		    for (y = 0; y < height; y++) {
+		        inpos = y * width * 4; // *4 for 4 ints per pixel
+		        outpos = inpos + w2 * 4;
+		        for (x = 0; x < w2; x++) {
+
+		        	
+		        	//reads pixel data(of img c)to each channel of rgb
+		        	//adjusts values according to mins/maxs 
+		            r = ((imageData.data[inpos++]-rMin)/(rMax - rMin))*255;
+		            g = ((imageData.data[inpos++]-gMin)/(gMax - gMin))*255;
+		            b = ((imageData.data[inpos++]-bMin)/(bMax - bMin))*255; 
+		            a = imageData.data[inpos++];     // same alpha
+
+										
+					//assigns pixel data of output image
+		            imageData.data[outpos++] = r;
+		            imageData.data[outpos++] = g;
+		            imageData.data[outpos++] = b;
+		            imageData.data[outpos++] = a;
+		        }
+		    }
+		    // put pixel data on canvas side by side, og image and new image
+		    c.putImageData(imageData, 0,0);
+		    
+			//then run averaging function that finds average and spits out color difference on NEW image
+			//new imageData for corrected image at center 16 
+			top= (height/2)-2;
+			left=(width/2)+(width/4)-2;
+			
+		    newData = c.getImageData(left,top,4,4);//(254,764, 4, 4);
+		    
+		    for (y=0; y < 4; y++){
+		    	inpos = y * 4 *4; //y*sampleWidth*data array
+		    	for (x=0; x < 4; x++){
+		    		targetR = newData.data[inpos++];
+		    		targetG = newData.data[inpos++];
+		    		targetB = newData.data[inpos++];
+		    		targetA = newData.data[inpos++];
+		            // Add counts to our histogram arrays for each color.
+		            
+		            //simple skin check
+		            if (targetR > targetG && targetG > targetB){
+		            
+		            reds.push(targetR);
+		            greens.push(targetG);
+		            blues.push(targetB);
+		            } 
+
+		    	}		    
+		    }
+		    //finds the target average rgb and applies distance from white function
+		    findAvgAndDist(reds, greens, blues)
+		    console.log("distance from white= "+dist);
+		    console.log("You have a warm undertone: "+uTone);
+		    
+		}
+		
+		function findAvgAndDist(reds, greens, blues) {
+			  
+			var r_ = 0;
+			var g_ = 0;
+			var b_ = 0; 
+			
+			//creates sums of values in reds greens blues
+			for (var i = 0; i < reds.length; i++) {
+    			r_ += parseInt(reds[i]);
+    			g_ += parseInt(greens[i]);
+    			b_ += parseInt(blues[i]);
+			}
+			//creates average
+			r_/=reds.length;
+			g_/=greens.length;	
+			b_/=blues.length;
+			
+			//calculates the green-blue differential for warm/cool undertone diagnosis
+			gbDiff = g_-b_;
+			if (gbDiff>=23){uTone = true;} else {uTone = false;}
+			
+			console.log(r_+","+g_+","+b_);
+			
+			//simple skin checker 
+			//if this checkes false then user should retake photo
+			if (r_-g_ > 5  && r_ > g_ && g_ > b_){
+				console.log("Human!");
+			} else {console.log("You are not human!");}
+			
+			
+			//distance from white formula
+			rr = (r_ + 250)/2;
+			diffR = r_ - 255;
+			diffG = g_ - 255;
+			diffB = b_ - 255;
+			
+			dist = Math.sqrt((2 + (rr/256)) *(diffR * diffR) + 4 *(diffG * diffG) +(2 + (255 - rr) / 256) *(diffB * diffB)) / 100;
+			
+		}
+
+			
+		im = new Image();
+		im.onload = imageLoaded;
+		im.src = "img/fucklena.png"; //Original image being used
+		
+			
+						
+		
+		
+	
+	</script>
+
+</head>
+<body>
+	<div style="z-index:10">
+		<a href="" style="position:absolute; margin-left:143px; margin-top:223px"><img src="img/target.png"></a>
+		<a href="" style="position:absolute; margin-left:463px; margin-top:223px"><img src="img/target.png"></a>
+	</div>
+	<canvas id="canvas1" width="640", height="480"></canvas>
+</body>
+</html>

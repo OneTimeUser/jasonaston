@@ -1,0 +1,45 @@
+Title: Week 11-1:Bootstrap Intro
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+Today we took a look a ONE framework (among many) that helps jump start the front end web development process: Bootstrap. We also talked about what are some of the characteristics of front end web development and back end development.
+
+Bootstrap is a front end framework for developing responsive, mobile-first projects on the Web. It contains HTML and CSS design templates as well as optional JavaScript extensions.
+
+Originally developed as an internal toolkit for Twitter, the project was released as open-source code in 2010. It has since become one of the most popular front end Web frameworks and is used by many different kinds of sites.
+
+There are two ways to integrate Bootstrap into your project.  The easiest is to link to the necessary Bootstrap stylesheet and javascript files by including them in your HTML document like below:
+
+```
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   <!-- Your custom CSS -->
+   <link rel="stylesheet" href="myStyles.css">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
+```
+
+(file: bootstrap.pptx.pdf text: Download Presentation Slides)

@@ -1,0 +1,142 @@
+Title: Resources
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+###Readings (suggested)###
+1. Drucker, Johanna. Graphesis: Visual Forms of Knowledge Production. Cambridge, MA: Harvard University Press, 2014.
+2. A Layered Grammar of Graphics, Hadley Wickham, Journal of Computational and Graphical Statistics, Volume 19, Number 1, Pages 3–28: 
+http://vita.had.co.nz/papers/layered-grammar.pdf	 
+3. Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods. William S. Cleveland; Robert McGill. Available here:
+http://liquidbriefing.com/twiki/pub/Dev/RefCleveland1984/Cleveland__McGill,_1984.pdf 
+4. Some Graphic and Semigraphic Displays, John Tukey, Statistical Papers in Honor of George W. Snedecor, pp. 293-316 (1972). Available here: http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003v7 
+5. Manovich, L.: Software Takes Command (excerpt)
+	https://getit.library.nyu.edu/go/9370312?umlaut.institution=NS 
+6. Computational Information Design, Ben Fry:  http://benfry.com/phd/dissertation-110323c.pdf
+7. Reas, C., McWilliams C., LUST. Form and Code: In Design, Art, and Architecture. New York, NY: Princeton Architectural Press, 2010.
+	https://getit.library.nyu.edu/go/9370313?umlaut.institution=NS 
+8. (link: https://www.amazon.com/Data-Points-Visualization-Means-Something/dp/111846219X text:  Data Points), Nathan Yau
+9.  (link: https://www.amazon.com/Design-Information-Introduction-Histories-Visualizations/dp/1592538061 text: Design for Information), Isabel Meirelles
+10. (link: https://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118 text: Envisioning Information), Edward Tufte
+11. (link: https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=Best+American+Infographics text: Best American Infographics serie)s, Gareth Cook
+12. (link: https://www.amazon.com/Photoviz-Visualizing-Information-through-Photography/dp/3899556453 text: Photoviz: Visualizing Information throughPhotography), Nicholas Felton
+13. (link: https://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879 text: Universal Principles of Design), William Lidwell
+14. (link: https://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281 text: Wall Street Journal Guide to Information Graphics),
+Dona Wong
+15. (link: https://www.amazon.com/Graphics-Cookbook-Practical-Recipes-Visualizing/dp/1449316956 text: R Graphics cookbook), Winston Chang
+
+###Links###
+(link: http://flowingdata.com/ text: Flowing Data)
+(link: http://www.storybench.org/ text:Storybench )
+(link: https://www.theguardian.com/news/datablog/gallery/2013/aug/01/16-useless-infographics text:16 Useless infographics)
+(link: http://viz.wtf/ text: WTF Visualizations)
+(link: http://www.informationisbeautiful.net text: Information is Beautiful)
+(link: https://www.informationisbeautifulawards.com text: Information is Beautiful Awards )
+(link: https://www.nytimes.com/interactive/2015/07/14/science/space/pluto-flyby.html text: NY Times Pluto Fly By)
+
+###People/studios###
+(link: http://benfry.com/ text: Ben Fry)
+(link: http://www.accurat.it/ text: Accurat )
+(link: http://www.morgenpost.de/interaktiv/ text: Berliner Morgenpost )
+(link: http://bloomberg.com/graphics text: Bloomberg Graphics)
+(link: https://fathom.info/ text: Fathom )
+(link: https://projects.fivethirtyeight.com/ text: FiveThirtyEight )
+(link: http://www.francescofranchi.com/projects/infographics  text: Francesco Franchi)
+(link: http://giorgialupi.com/ text: Georgia Lupi)
+(link: https://driven-by-data.net/ text: Gregor Aisch)
+(link: http://hint.fm/ text: Hint.fm )
+(link: http://www.latimes.com/visuals/graphics/ text: L.A. Times Graphics)
+(link: http://truth-and-beauty.net/ text: Moritz Stefaner)
+(link: http://feltron.com/ text: Nicholas Felton)
+(link: http://nicolasrapp.com/ text: NIcolas Rapp )
+(link: https://www.nytimes.com/interactive/2016/12/28/us/year-in-interactive-graphics.html text: NY Times Graphics)
+(link: http://www.periscopic.com/ text: Periscopic)
+(link: https://stamen.com/ text: Stamen)
+(link: https://www.washingtonpost.com/graphics/national/2016-in-graphics/ text:Washington Post Graphics )
+(link: http://christophercannon.net text: Christopher Cannon)
+(link: http://www.dwbowen.com text: David Bowen )
+(link: http://13pt.com/graphics/ text: 13pt)
+(link: http://www.joshworth.com text: Josh Worth)
+(link: http://roberthodgin.com text: Robert Hodgin)
+(link: http://www.aaronkoblin.com text: Aaron Koblin)
+(link: http://number27.org/ text: Jonathan Harris)
+
+###Interesting Data Viz Projects###
+(link: http://donottouch.org text: Do Not Touch) - Music video that records users cursors and aggregates them to show a video data viz of where viewers' attention is via mouse capture.
+(link: https://www.nytimes.com/interactive/2016/08/15/sports/olympics/usain-bolt-mens-100-meters-final.html?rref=collection%2Fspotlightcollection%2Frio-olympics-2016-interactive-stories text: NY Times Usain Bolt)
+(link: http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html text: If the Moon Were only One Pixel by Josh Worth)
+(link: https://moonmoonmoonmoon.com text: Moon by Ai Wei Wei and Olafur Eliasson)
+(link: http://www.aaronkoblin.com/work/flightpatterns/ text: Flight Patterns)
+(link: http://selfiecity.net text: Selfie City)
+(link: https://www.nytimes.com/interactive/2017/08/21/science/eclipse-reader-photos.html text: NY TImes Solar Eclipse Story)
+(link: http://visualoop.com/infographics/the-truth-about-t-rex text: T.Rex Informatic)
+(link: https://github.com/MimiOnuoha/missing-datasets text: MIssing Data Sets)
+(link: https://www.wired.com/story/heres-how-much-food-an-iphone-charger-is-worth/ text: Photo Viz)
+(link: http://iwantyoutowantme.org/statement.html text: I want you to want me by Jonathan Harris)
+(link: http://deweyhagborg.com/projects/stranger-visions text: Stranger Visions by Heather Dewey Hagborg)
+(link: https://www.justinobeirne.com/cartography-comparison-summary text: Apple Maps vs. Google Maps - various visualizations in use)
+(link: https://itp.nyu.edu/~mae383/files/GOP_PDF_web.pdf text: Grand Ole Party - 3-D printed visualizations)
+
+###Tools###
+**Spreadsheet software / data organization**
+Excel / Apple Numbers / Google sheets
+(link: http://vis.stanford.edu/wrangler/ text: Data Wrangler)
+(link: http://openrefine.org/ text: Open Refine)
+(link: https://bost.ocks.org/mike/algorithms/ text: Data Viz Algorithms)
+(link: http://guides.library.duke.edu/datavis/vis_types text: Data Viz Types)
+(link: http://www.datavizcatalogue.com text: Data Viz Types and Catalogue)
+
+**Public data**
+(link: https://www.google.com/publicdata/directory text: Google Public Data Explorer)
+(link: https://www.census.gov/data.html text: U.S. Census)
+(link: http://tinyletter.com/data-is-plural/archive text: Data is Plural)
+
+**Personal data recording**
+(link: http://www.reporter-app.com/ text: Reporter app)
+(link: https://moves-app.com/ text: Moves app)
+
+**Text analysis tools**
+(link: http://www.lextutor.ca/freq/eng/ text: Web Frequency Indexer )
+(link: http://databasic.io/ text: DataBasic)
+
+**Charting tools**
+(link: http://www.adobe.com/products/illustrator.html text: Adobe Illustrator)
+(link: https://www.theatlas.com/ text: Quartz Atlas)
+(link: http://app.rawgraphs.io/ text: RAWGraphs)
+(link: https://developers.google.com/chart/interactive/docs/gallery text: Google charts)
+(link: https://www.tableau.com/ text: Tableau)
+(link: https://flourish.studio/ text: Flourish)
+(link: http://www.csgnetwork.com/circle_sphere_area_calculator.html text: Circle Area Calculator)
+
+**Programming languages for charting**
+(link: https://d3js.org/ text: D3)
+(link: https://www.r-project.org/ text: R) (first) / (link: https://www.rstudio.com/products/rstudio/download/ text: R Studio) (second)
+(link: http://christophercannon.net/r-tutorial/index.html text: R tutorial)
+(link: http://www.processing.org text: Processing)
+(link: https://processing.org/tutorials/data/ text: Processing Data Tutorial)
+
+**Mapping**
+(link: https://en.wikipedia.org/wiki/Wikipedia:Blank_maps text: Wikipedia blank maps)
+(link: https://carto.com/ text: CartoDB)
+(link: http://www.qgis.org/ text: QGIS)
+(link: http://indiemapper.io/ text: IndieMapper)
+(link: https://www.openstreetmap.org/ text: Openstreetmap)
+(link: https://www.google.com/earth/ text: Google Earth)
+(link: https://geocod.io/ text: geocodio)
+
+**CAMPUS RESOURCES**
+The university provides many resources to help students achieve academic and artistic excellence. These resources include:
+
+The University (and associated) Libraries: http://library.newschool.edu
+The University Learning Center: http://www.newschool.edu/learning-center
+University Disabilities Service: www.newschool.edu/student-disability-services/
+
+In keeping with the university’s policy of providing equal access for students with disabilities, any student with a disability who needs academic accommodations is welcome to meet with me privately. All conversations will be kept confidential. Students requesting any accommodations will also need to contact Student Disability Service (SDS). SDS will conduct an intake and, if appropriate, the Director will provide an academic accommodation notification letter for you to bring to me. At that point, I will review the letter with you and discuss these accommodations in relation to this course.
+
+**MAKING CENTER**
+The Making Center is a constellation of shops, labs, and open workspaces that are situated across the New School to help students express their ideas in a variety of materials and methods.  We have resources to help support woodworking, metalworking, ceramics and pottery work, photography and film, textiles, printmaking, 3D printing, manual and CNC machining, and more. A staff of technicians and student workers provide expertise and maintain the different shops and labs.  Safety is a primary concern, so each area has policies for access, training, and etiquette that students and faculty should be familiar with. Many areas require specific orientations or trainings before access is granted.  Detailed information about the resources available, as well as schedules, trainings, and policies can be found at resources.parsons.edu.

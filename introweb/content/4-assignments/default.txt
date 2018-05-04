@@ -1,0 +1,18 @@
+Title: Assignments
+
+----
+
+Text: 
+
+(link: http://www.jason-aston.com/introweb/assignments/assignment-1/ text: **Assignment 1 - UNIX**) due  Thursday, Sept. 14
+(link: http://www.jason-aston.com/introweb/assignments/html-assignment-2/ text: **Assignment 2- HTML**) due  Thursday, Sept. 28
+(link: /assignments/css-assignment-3 text:**Assignment 3- CSS**) due Tuesday, Oct. 10
+(link: /assignments/images-and-animation-assignment-4/ text:**Assignment 4- Images and Animation**) due Tuesday, Oct. 24
+(link: /assignments/wireframing-5/ text:**Assignment 5- Wireframing**) due Tuesday, Nov 7
+(link: assignments/responsive-web-design text:**Assignment 6- Responsive Web Design**) due Thursday, Nov 16
+(link: assignments/frameworks-7 text:**Assignment 7- Web Frameworks with Bootstrap**) due Thursday, Nov 30
+(link: assignments/jquery-and-javascript text:**Assignment 8 - JQuery and Javascript**) due Tuesday, Dec 12
+
+----
+
+Cover: 

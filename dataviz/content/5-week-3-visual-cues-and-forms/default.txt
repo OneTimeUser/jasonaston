@@ -1,0 +1,41 @@
+Title: Week 3: Visual Cues and Forms
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**LECTURE:**
+LATCH methods reviewed. What are the various visual cues we can use to make data itself easier to understand? What are the practical forms these take? 
+
+**SLIDES:**
+(file:class3.pdf text:Class-3)
+ 
+
+**VISUAL AIDES:**
+These are helpful in helping you find the right format for what it is you are showing. These are not exhaustive nor definitive.
+
+(file: visual-vocabulary.pdf text:visual-vocabulary-1)
+
+(file: visual-vocabulary-2.jpg text:visual-vocabulary-2)
+
+ 
+
+**ASSIGNMENT:**
+Using one of your printed out images (or objects) as the subject, create a visualization of that subject- telling whatever story you want to tell using the various organizations, visual cues, and forms you know now. 
+
+Some of you brought in images on only one subject, e.g. books, makeup, music, scary Korean beauty mask, so that is the subject you are working with. Feel free to modify or go a level deeper if it feels worthwhile. If you feel confident enough to start layering in complexity, do it.   
+
+Of course, I am always here to answer questions or clarify: astoj809@newschool.edu.
+ 
+
+**READING:**
+ <div class="textLayer--absolute"><a href="http://bit.ly/1FdXs9x">Taking Data Visualization From Eye Candy to Efficiency, National Geographic</a></div>
+<div class="textLayer--absolute"><a href="http://nyti.ms/2ku6jhw">There Are Many Ways to Map Election Results. We’ve Tried Most of Them. New York Times </a></div>
+<div class="textLayer--absolute"><a href="http://bit.ly/2xai2bm">Making Election Maps Popular Again, Lisa Charlotte Rost</a></div>
+<div class="textLayer--absolute"><a href="http://bit.ly/2ylVSkv">Translate and Transmit: Physical Visualizations</a></div>
+<div class="textLayer--absolute"><a href="http://bit.ly/2xtT2ff">More on Physical visualizations</a></div>
+<div class="textLayer--absolute"><a href="http://bit.ly/1zz9oMc">List of Physical Visualizations/Related Artifacts</a></div>

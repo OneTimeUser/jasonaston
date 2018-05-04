@@ -1,0 +1,25 @@
+Title: Week 05: Document Objects and Events
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Lecture**
+
+Before the lecture students will be presenting their designs for their tile matching game. For the lecture will be talking about the document object model (DOM) and better understand how to use JavaScript to interact with the DOM tree. We will also be covering events that can trigger code, i.e. on click, on load, on keypress, etc.
+
+(link: http://webtwo.dannewoo.com/wp-content/lectures/webdesign2_week05.pdf text: Download Lecture PDF)
+
+**In Class Assignment**
+
+Take the grid of images we create last week, add a start button to reveal grid, figure out how to create a cover tile, figure out how to resize the width and height of the tiles proportionally and add a click event for each element to reveal the image below it.
+
+Look at using: addEventListener click/resize, create a buildBoard function to load tiles when start button is clicked, this keyword or the event object and classList add/remove/toggle to hide or show an element using CSS visibility or display.
+
+**Homework**
+
+For our midterm we will be programming a simple tile matching game like (link: http://creativesourceinc.com/portfolio/match-the-flower/ text: this one). For homework I want you to design the static version of this game using either Photoshop or Illustrator. Pick a theme for this game and have the design reflect this theme. Design is part of your grad so really put some thought an effort into this. Be prepared to present your designs next week. Your game must include at least 8 tiles, have a timer, counter and a play button.

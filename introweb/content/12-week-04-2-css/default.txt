@@ -1,0 +1,18 @@
+Title: Week 04-2:CSS
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Lecture:
+**Today we stayed in CSS to explore some quirks about the box model: margin, border, and padding. We will revisit this some where later on. 
+We talked about various ways to install custom fonts into your webpages and how to give text and elements drop shadows. 
+We went over how to target different states of the `<a>` element in CSS.
+Finally we addressed min/max height and width, overflow, and the difference between display and visibility. 
+
+**Homework/Reading:**
+Read Chapter 16

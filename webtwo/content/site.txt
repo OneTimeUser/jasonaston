@@ -1,0 +1,67 @@
+Title: Web Design Two
+
+----
+
+Author: 
+
+----
+
+Description: You're in TWO deep.
+
+----
+
+Keywords: 
+
+----
+
+Copyright: - © (date: Year) All right reserved
+
+----
+
+Social-icons: 
+
+- 
+  social_icon_class: fa-twitter
+  social_icon_name: Twitter
+  social_icon_url: http://twitter.com
+  social_icon_link: '#'
+- 
+  social_icon_class: fa-facebook
+  social_icon_name: Facebook
+  social_icon_link: '#'
+- 
+  social_icon_class: fa-instagram
+  social_icon_name: Instagram
+  social_icon_link: '#'
+- 
+  social_icon_class: fa-dribbble
+  social_icon_name: Dribbble
+  social_icon_link: '#'
+- 
+  social_icon_class: fa-github
+  social_icon_name: GitHub
+  social_icon_link: '#'
+- 
+  social_icon_class: fa-500px
+  social_icon_name: 500px
+  social_icon_link: '#'
+- 
+  social_icon_class: fa-phone
+  social_icon_name: Phone
+  social_icon_link: '#'
+- 
+  social_icon_class: fa-envelope-o
+  social_icon_name: Email
+  social_icon_link: '#'
+
+----
+
+Email: jason.aston@qc.cuny.edu
+
+----
+
+Site-title: Web Design Two
+
+----
+
+Logo: 

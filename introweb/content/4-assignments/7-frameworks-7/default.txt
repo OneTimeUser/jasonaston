@@ -1,0 +1,69 @@
+Title: Frameworks-7
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+Due Nov. 30th!
+**Web Framework**
+In this assignment, you will create a new website using the front-end web framework, Bootstrap. The theme of this site should be professionally-oriented. Potential topics include a portfolio, a social cause, a small business, and an expanded résumé.
+
+Make a new project folder where you will put all your website files for this assignment.
+Follow instructions for getting started with Bootstrap. This is simply a matter of linking to the files that Bootstrap depends on or downloading the files and linking to them in your folder.
+
+Copy and paste the HTML source code for the Bootstrap starter template, and save it into your own HTML file named “index.html” in your project folder
+Edit this HTML code and modify the link to the “Bootstrap core CSS” file so that it correctly points to the Bootstrap CSS file.
+Edit this HTML code and modify the link to the “Custom styles for this template” so that it points to a new css file you will make, which is custom.css
+Create a custom CSS file.
+
+Copy and paste the CSS source code used by the Bootstrap starter template; save it into a new CSS file named “custom.css” within your css folder.
+You will add all your custom CSS for this assignment to this file.
+Open the HTML page you made in your web browser. Make sure it looks just like the starter template example before proceeding.
+
+**Leveraging Bootstrap’s Features**
+Familiarize yourself with the various aspects of working with Bootstrap, including the following.
+
+The built-in CSS classes that can be used to create custom layouts, including grid-based layouts with responsive layouts features
+The built-in CSS classes that can be used to style common user interface components, such as buttons, glyphs, drop-down menus, and thumbnail images
+The built-in CSS classes that can be used to create interactive widgets, such as carousels, tabs, and drop-down menus
+Customizing the Default Theme
+You can quickly and easily change the default style of components and interactive widgets by following the customization workflow outlined on the Bootstrap site.
+
+For each element you want to customize, find its code in the compiled Bootstrap CSS
+Copy the component's selector and styles and paste them in your custom stylesheet. For instance, to customize the navbar background, just copy the .navbar style specification.
+In your custom stylesheet, edit the CSS you just copied from the Bootstrap source.
+Continue this process until you’re happy with your customizations.
+
+**Requirements**
+Here is a list of required elements to include.
+
+Create at least 3 pages of content with a consistent style
+Create the general page layout on each page using Bootstrap’s resposive grid layout features
+Use a single Bootstrap navigation component on all pages to allow visitors to browse among the 3 (or more) pages
+Use Bootstrap’s carousel widget, including at least three images
+Incorporate at least **one** Bootstrap component (such as buttons, glyphs, drop-down menus, etc.) on each page of the site
+Beyond these requirements, feel free to explore Bootstrap and take this project as far as you would like! **Sites that demonstrate extra effort and thoughtfulness will be considered for extra credit. In particular, try to customize your website so that it does not look like Bootstrap’s default themes.**
+
+**Publishing Your Website
+**Upload your website to the i6 Unix server in its own directory. Test your files again once they are “live” on the Web server to make sure they are accessible. Update your assignments directory to link to this page.
+
+**Submitting Your Assignment**
+Submit the following via NYU Classes. More information on submitting files with NYU Classes is also available here.
+
+The URL to your website on i6
+A compressed archive containing all the files of your website
+Grading
+This assignment is worth 10 points.
+
+A Bootstrap-powered website of at least three different pages (5 points)
+A single Bootstrap navigation component on all pages (1 point)
+At least one Bootstrap component incorporated into each page (1 point)
+A responsive Bootstrap grid system for page layout (2 points)
+A Bootstrap carousel widget with at least three images (1 point)
+
+Extra credit
+Website demonstrates extra effort and thoughtfulness and does not look very similar to Bootstrap’s default themes. (2 points)
