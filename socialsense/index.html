@@ -48,6 +48,10 @@
             text-align: center;
         }
 
+        #mobile {
+            display: none;
+        }
+
         #summary {
             width: 1077px;
             float: left;
@@ -261,6 +265,30 @@
             left: 1180px;
         }
 
+        @media(max-width:601px) {
+
+            main {
+                width: 100%;
+            }
+
+            #mobile {
+                display: block;
+                position: absolute;
+                top: 128px;
+                left: 50%;
+                width: 90vw;
+                transform: translateX(-50%);
+            }
+
+            #summary {
+                display: none;
+            }
+
+            #viz-container {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 
@@ -271,9 +299,10 @@
         </header>
         <main>
             <h1 id="title">Social Sense</h1>
+            <h3 id="mobile">Sorry, this visualization is hard to enjoy on smaller screens, please view from something larger like a tablet or a desktop computer. Thanks.</h3>
             <article id="summary">
                 <p>This is a little summary about the folowig graphic. This is a little summary about the folowig graphic. This is a little summary about the folowig graphic. This is a little summary about the folowig graphic. </p>
-                <P>This is a little summary about the folowig graphic. This is a little summary about the folowig graphic. This is a little summary about the folowig graphic. </P>
+                <p>This is a little summary about the folowig graphic. This is a little summary about the folowig graphic. This is a little summary about the folowig graphic. </p>
             </article>
             <div id="viz-container">
                 <h2 id="time">TIME</h2>
@@ -293,15 +322,15 @@
                 <section class="names">
                     <ul id="names-first">
                         <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-placement="right" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Maria</a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-placement="right" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Robert</a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-placement="right" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Camille</a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-placement="right" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Nicole</a></li>
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-placement="right" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Robert</a></li>
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-placement="right" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Camille</a></li>
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-placement="right" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Nicole</a></li>
                     </ul>
                     <ul id="names-second">
                         <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Maria</a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Robert</a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Camille</a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Nicole</a></li>
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Robert</a></li>
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Camille</a></li>
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">Nicole</a></li>
                     </ul>
                 </section>
                 <section id="visual">
@@ -331,76 +360,76 @@
                         <li></li>
                     </ul>
                     <ul class="yellow circles">
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
                     </ul>
                     <ul class="blue circles">
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
                         <li></li>
                         <li></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
                     </ul>
                     <ul class="aqua circles">
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
                         <li></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
                     </ul>
                     <ul class="intersect circ">
-                        <li class="circle-short exp3"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li class="circle-short exp3"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert, Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li class="circle-long exp4"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li class="circle-long exp4"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria, Robert, Camille, Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li class="circle-short exp5"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li class="circle-short exp5"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille, Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li class="circle-long exp8"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li class="circle-long exp8"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria, Robert, Camille, Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                     </ul>
@@ -427,82 +456,82 @@
                         <li></li>
                     </ul>
                     <ul class="yellow squares">
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
                     </ul>
                     <ul class="blue squares">
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
                     </ul>
                     <ul class="aqua squares">
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                         <li></li>
                     </ul>
                     <ul class="intersect squa">
-                        <li class="square-short exp3"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li class="square-short exp3"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Robert, Camille" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li class="square-long exp4"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li class="square-long exp4"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria, Robert, Camille, Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li class="square-short exp5"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li class="square-short exp5"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Camille, Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
-                        <li class="square-long exp8"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
+                        <li class="square-long exp8"><a tabindex="0" class="popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Maria, Robert, Camille, Nicole" data-content="And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?And here's some amazing content. It's very engaging. Right?">
                             
                         </a></li>
                     </ul>
