@@ -2123,7 +2123,7 @@ html {
 }
 
 #sequence-windows-burst {
-    /*    display: none;*/
+    display: none;
 }
 
 .html-desktop {
@@ -2598,7 +2598,8 @@ img {
     width: calc(100vw - 2em);
     height: calc(100vh - 2em);
     position: absolute;
-    z-index: 999;
+    /*    z-index: 999;
+    */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
