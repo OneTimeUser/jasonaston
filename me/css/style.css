@@ -2714,6 +2714,12 @@ img {
     width: 95%;
 }
 
+@media screen and (max-width: 767px) {
+    video {
+        width: 100% !important;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .big-svg-wrapper {
         width: 70%;
