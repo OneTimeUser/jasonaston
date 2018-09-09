@@ -2848,6 +2848,7 @@ body.desktop .window-os {
     .win1 {
         width: 700px;
     }
+
 }
 
 /* Official srore window */
@@ -2901,6 +2902,13 @@ body.desktop .window-os {
         width: 250px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .win7 {
+        width: 800px;
+    }
+}
+
 
 body > iframe {
     position: absolute;
