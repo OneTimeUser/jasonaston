@@ -1,0 +1,215 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- The title tag we show the title of our site and the title of the current page -->
+    <title>
+        David Rodgers </title>
+    <link rel="stylesheet" href="https://use.typekit.net/uqx8mtr.css">
+
+    <!-- Stylesheets can be included using the `css()` helper. Kirby also provides the `js()` helper to include script file. 
+        More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers -->
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link href="assets/css/templates/home.css" rel="stylesheet">
+    <link href="assets/css/flickity.css" rel="stylesheet">
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+    </script>
+
+
+</head>
+
+<body class="loading">
+    <main>
+        <div class="page" data-scroll>
+            <header class="header">
+                <!-- In this link we call `$site->url()` to create a link back to the homepage -->
+                <a class="logo" href="">D.R</a>
+
+                <nav id="menu" class="menu">
+                    <span>DAVID RODGERS INC.</span>
+                    <!--                    In the menu, we only fetch listed pages, i.e. the pages that have a prepended number in their foldername // We do not want to display links to unlisted `error`, `home`, or `sandbox` pages // More about page status: https://getkirby.com/docs/reference/panel/blueprints/page#statuses
+                    foreach ($site->children()->listed() as $item):
+                    $item->title()->link()
+                     endforeach-->
+                </nav>
+            </header>
+
+
+            <div class="main__content home-page">
+
+                <section class="home-featured">
+                    <article class="client">
+                        <figure>
+                            <!--                    <img alt="" src="media/pages/projects/hello/3814237728-1573515752/bg-1024x1024.png">-->
+                            <!--                    new addition-->
+                            <div class="item__img-wrap">
+                                <div class="item__img" style="background-image: url(media/pages/projects/hello/3814237728-1573515673/bg.png)"></div>
+                            </div>
+                            <!--                    end new addition-->
+                            <figcaption>
+
+                                <p class="featured-title">
+
+                                    MOS<br /> CHI
+                                    <br /> NO
+                                </p>
+                                <div class="featured-bottom">
+                                    <p class="featured-heading">
+                                        Fashion Presentation 2020 </p>
+                                    <p class="featured-sub">
+                                        New York, New York </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <a class="more" href="projects/index.html">VIEW MORE</a>
+                </section>
+                <section id="about-agency">
+                    <p class="about__dark-text">
+                        <span> We are a creative agency focused on full-<br />
+service event production.</span>
+                    </p>
+                    <p class="about__light-text" style="background:center / cover no-repeat url( media/site/1164240464-1573515647/occasions.png)">
+                        <span> We are a creative agency focused on full-<br />
+service event production.</span>
+                    </p>
+
+                </section>
+                <section id="client-list">
+
+                    <img src="media/pages/projects/vogue/3495650138-1573515700/dark-forest-x200.jpg">
+
+
+                    <img src="media/pages/projects/trees/3506294441-1573515704/monster-trees-in-the-fog-x200.jpg">
+
+
+                    <img src="media/pages/projects/animals/3779077927-1573515712/peter-fox-x200.jpg">
+
+
+                    <img src="media/pages/projects/ocean/3567208724-1573515716/island-from-above-x200.jpg">
+
+
+                    <img src="media/pages/projects/karllagerfeld/357164395-1573515722/indiana-jones-x200.jpg">
+
+
+                    <img src="media/pages/projects/mountains/1173080142-1573515726/probably-photoshopped-x200.jpg">
+
+
+                    <img src="media/pages/projects/waterfall/2577458037-1573515733/the-fall-is-lava-x200.jpg">
+
+
+                    <img src="media/pages/projects/plants/460365936-1573515738/nice-colors-ugly-plant-x200.jpg">
+
+
+                    <img src="media/pages/projects/hello/3814237728-1573515875/bg-x200.png">
+
+
+                    <span class="section__title">CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS</span>
+                    <article>
+
+
+
+
+
+                        <ul class="client">
+                            <li>
+                                3.1 Phillip Lim </li>
+                            <li>
+                                Absolut Vodka </li>
+                            <li>
+                                Barcardi </li>
+                            <li>
+                                Calvin Klein </li>
+                            <li>
+                                Cartier </li>
+                            <li>
+                                Dior </li>
+                            <li>
+                                Diane Von Furstenberg </li>
+                            <li>
+                                Diesel </li>
+                            <li>
+                                Dolce & Gabbana </li>
+                        </ul>
+
+                        <ul class="client">
+                            <li>
+                                Giorgio Armani </li>
+                            <li>
+                                Hermés </li>
+                            <li>
+                                L'Oreal </li>
+                            <li>
+                                Lexus </li>
+                            <li>
+                                Maison Martin Margiela </li>
+                            <li>
+                                Nintendo </li>
+                            <li>
+                                Museum of Contemporary Art </li>
+                            <li>
+                                Paramount Pictures </li>
+                            <li>
+                                Yahoo </li>
+                        </ul>
+                    </article>
+
+                </section>
+
+
+
+
+
+
+                <footer class="footer">
+
+
+                    <nav class="footer-nav">
+                        <ul>
+                            <li>
+                                <a class="footer__logo" href=""><span>D.R</span></a>
+                                <span>DAVID RODGERS INC.</span>
+                            </li>
+                            <li class="social"><a href="https://instagram.com/getkirby">Instagram</a></li>
+                            <li>
+                                <p>
+                                    3016 Passmore Drive<br /> LA, CA 90068 </p>
+                                <p>
+                                    323 462 5310 </p>
+                                <p>
+                                    <a href="emailto:info@davidrodgersinc.com">info@davidrodgersinc.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="bottom">
+                        <a href="">&copy; 2019 / David Rodgers</a>
+
+                        <a class="site-credit" href="https://www.thewondermob.com">Site Credit</a>
+                    </section>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/flickity.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+
+</html>
