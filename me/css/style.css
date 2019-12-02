@@ -1977,10 +1977,6 @@
 
 /*================ Partials | Helper Classes ================*/
 
-.clearfix {
-    *zoom: 1;
-}
-
 .clearfix:after {
     content: "";
     display: table;
@@ -2033,7 +2029,6 @@
 [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -2451,27 +2446,7 @@ img {
     font-size: .75em;
 }
 
-.share-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-    margin-right: 1rem !important;
-    margin-left: 1rem !important;
-}
 
-.share-wrapper .fb-wrapper,
-.share-wrapper .twitter-wrapper {
-    padding-top: 0.25rem !important;
-    padding-bottom: 0.25rem !important;
-    padding-right: 0.25rem !important;
-    padding-left: 0.25rem !important;
-}
-
-.share-wrapper .fb-wrapper {
-    margin-top: -1px;
-}
 
 .list-4col {
     columns: auto auto;
