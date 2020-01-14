@@ -1,0 +1,20 @@
+Title: Silver Clouds
+
+----
+
+Text: 
+
+Silver Clouds uses augmented reality to allow you to recreate Andy Warhol’s famous site-specific installation piece in digital space. No helium required.
+
+(link: https://itunes.apple.com/us/app/silver-clouds/id1394924553?platform=iphone&preserveScrollPosition=true#platform/iphone text: Check it out on the App Store)
+
+(image: sc1.jpg)
+(image: sc2.png)
+
+----
+
+Thumbimage: 
+
+----
+
+Tags: AR,App,Design,Development,U/X

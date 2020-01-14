@@ -1,0 +1,19 @@
+Title: Pay2Play
+
+----
+
+Text: 
+
+(image: p2p.jpg)
+Pay2Play is an installation that explores an alternate reality of micropayment monetization of the internet, influenced heavily by the writings of Jaron Lanier. Physical costs aside, society has always championed the internet space as "free," both in terms of the nature of communication and expression, and the price of information. Pay to Play visualizes the latter in it's most real, direct sense, paying directly for browsing habits in place of the ads and trackers that constantly capture and store and sell users' various personal data. The physical act of putting a coin in a machine helps materialize and contextualize the costs of internet content so that users can better understand the various social, behavioral, and financial economies of what is at play and at stake. 
+This project was partially funded by the J-stor foundation and was made for their convention on data and privacy as an accompaniment to keynote speaker, Jaron Lanier.
+######Technologies used: Javascript, Serial Communication, Browser Extension, Arduino
+(youtube: http://www.youtube.com/watch?v=d0PPHHD3ngs width: 100% height:360)
+
+----
+
+Thumbimage: 
+
+----
+
+Tags: Alt-R,Physical Computation

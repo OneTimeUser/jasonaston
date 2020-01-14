@@ -1,0 +1,17 @@
+Title: WWE+HP
+
+----
+
+Text: 
+
+The WWE needed some additional marketing for a new horror property called Barricade. The Wonder Mob came through an programmed an augmented reality experience in partnership with Hewlett Packard. This experience not only featured content and the trailer for the movie, but served as a mini-game, explosive effects and purchasing endpoint for the brand and retail partners.
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/WZYwwMR6nXU?rel=0&controls=0&showinfo=0&VQ=HD720" frameborder="0" allowfullscreen></iframe>
+
+----
+
+Thumbimage: 
+
+----
+
+Tags: AR,Game Design,Retail

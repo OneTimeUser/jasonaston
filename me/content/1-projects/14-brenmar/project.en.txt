@@ -1,0 +1,29 @@
+Title: Brenmar
+
+----
+
+Text: 
+
+(image: fg.jpg)
+
+Foolsgold artist Brenmar needed a 3D scan of his bust in order to simulate a trophy in his likeness for the cover of his new album, Award.  
+
+Having limited time to refine the process, we opted to use existing Skanect software to pair up well with the Microsoft Kinect for an easy, relatively stress-free session of live 3D scaning. 
+
+(image: fg1.png)
+(image: fg2.png)
+
+Afterwards, the scans were smoothed and refined in Cinema4D before the final rendering artist added texture, gloss, and environment.
+
+(image: fg3.jpg)
+(image: fg4.gif)
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/rQ8u0FxzFa0" frameborder="0" allowfullscreen></iframe>
+
+----
+
+Tags: 3D,Structure Sensing,Visual Effects
+
+----
+
+Thumbimage: thumb.gif

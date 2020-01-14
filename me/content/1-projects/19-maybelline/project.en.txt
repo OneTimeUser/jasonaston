@@ -1,0 +1,35 @@
+Title: Maybelline
+
+----
+
+Text: 
+
+(image: image.jpg)
+
+Wondermob is not an app company. Our primary objective when dreaming up projects is to solve a problem, be it technological or not. 
+
+It was by accident that we ventured into the beauty world, but we were presented with an opportunity that availed itself quite organically and logically.  In an area with such a finite amount of space and intense competition, how does a brand stand out?   What clever tools can be used to increase brand awareness and information without having to purchase more shelf real estate or exist under the constraints of retailer rules. 
+
+An area that seemed ripe for exploration and innovation was/is drugstore makeup.  And we asked ourselves this question: how do you approximate the makeup counter experience in the makeup aisle of a retailer?
+
+A problem is a problem. We approached it the same way we do all of our projects, with research, interviews and a very open mind.
+
+The end result is Makeup Express by Maybelline. Embedded in this modular app is the ability to view all of Maybelline’s product line; watch tutorials, videos, and extended marketing material like fashion trends; save and/or share products; locate Maybelline products; and the use of two custom technologies built and made exclusively for Maybelline.
+
+(image: image1.jpg)
+(image: image2.jpg)
+(image: image3.jpg)
+
+In order to achieve allowing the user to view additional information at the point-of-sale, we relied on augmented reality to wow the user via unique digital markings or product packaging, entitled M:Interactive. The Maybelline product range is so vast that is virtually impossible for a customer to distinguish between, say, the myriad of eyeliners offered. By viewing a specific eyeliner through Maybelline’s interactive lens, the customer can see the appropriate use of a specific product, as well as offered discounts and/or additonal media related to the product.
+
+Our proprietary image processing technology, ShadeFinder, helps the user find her right shade of foundation. Research has shown that shade finding is one of the most frustrating drugstore makeup experiences a consumer can have. Usually, swatches aren’t enough to accurately match one’s shade in various lighting environments. Our research and prototyping comprised a year’s worth of work and we are not finished. This technology is constantly in development as we continuously tweak the math, science, and art of color matching.
+
+(image: image4.jpg)
+
+----
+
+Tags: AR,Creative Direction,Design,Development,App
+
+----
+
+Thumbimage: thumb.gif

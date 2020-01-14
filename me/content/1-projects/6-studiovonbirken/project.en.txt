@@ -1,0 +1,24 @@
+Title: Studio von Birken v3
+
+----
+
+Text: 
+
+**Check it out: **(link: http://www.studiovonbirken.com text: studiovonbirken.com)
+
+Studio von Birken is in a constant state of reinvention.  It takes a lot of manpower and energy to stay at the fore of design and style, and SvB has few challengers to the sheer brilliance of the lady at the helm.   
+
+For the third iteration of the site, we decided on exploding all projects out on a freescrolling page.
+
+The layout is random and uses existing layouts from version 1 and 2 in a horizontal style. 
+
+Clicking into an image or anyone of the categorical tags leads one down an endless road with no end, as one image leads to many and many leads to one, and so on.
+<iframe type="text/html" width="560" height="315" src="https://www.youtube.com/embed/p5hO4kIvStA?autoplay=1&modestbranding=1&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+----
+
+Tags: Design,Development,E-commerce
+
+----
+
+Thumbimage: 

@@ -1,0 +1,22 @@
+Title: Children's Museum of Manhattan
+
+----
+
+Text: 
+
+This is a preview prototype of Inspired: Muslim Architecture, an immersive exploration of the art and architecture of mosques from around the world for the Children's Museum of Manhattan- part of a larger permanent exhibit to occupy some of the main floor of the premier space in upper Manhattan.  
+
+This portable installation consists of a large projection-mapped pop-up book with screen and projector/tripod, controlled wirelessly by educators via an iPad. The pop-up book is made out of lightweight posterboard and air-blown plastic, with leather and wood finishes.  
+
+Check out the videos below for a look into the process and the dynamic content used to get children excited about globally relevant architecture.
+
+<iframe width="480" height="360" src="https://www.youtube.com/embed/Fb17R1k8scE" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/F-ZUOIZuSgg" frameborder="0" allowfullscreen></iframe>
+
+----
+
+Thumbimage: thumb.gif
+
+----
+
+Tags: Installation,Projection,Pop-Up,Network

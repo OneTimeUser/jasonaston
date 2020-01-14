@@ -1,0 +1,134 @@
+Title: Docs
+
+----
+
+Text:
+
+# GETTING STARTED
+****
+
+### Download
+Grab the [last version of kaunos portfolio theme](http://selz.co/1EPPktD)
+
+### Install
+1. Extract all the files and upload them in the root of your web host. Visit your website to check the installation.
+2. Truva comes with a preconfigured account. To access the panel navigate to `http://yourdomain.com/panel` and use the following identifiants:
+  - **username:** demo
+  - **password:** demo
+
+### Enter the license key
+Using [Kirby CMS](http://getkirby.com) in a production environment requires the purchase of a license.
+Once you get your license, go to `/site/config/config.php` and search for
+
+```
+c::set('license', 'your license key');
+```
+
+Fill in your license code to complete your installation of Kirby.
+
+### Configure
+From the Panel, go to the **Users** menu to change your password. You can also change your name and avatar which will be display in blog posts.
+
+Still from the Panel, go on **Site options** to change the name of your site, the description for search engines,
+
+##TYPOGRAPHY
+****
+
+Kirby uses Markdown to format texts. It's a powerful yet easy notation to write for the web.
+Here are the basics:
+
+##### Line breaks & paragraphs
+Kirbytext automatically converts single line breaks and paragraphs.
+
+```
+My first line
+My second line
+
+Another paragraph
+```
+
+##### Headlines
+(example…)
+# Headline 1
+## Headline 2
+### Headline 3
+#### Headline 4
+(…example)
+
+```
+# Headline 1
+## Headline 2
+### Headline 3
+#### Headline 4
+```
+
+
+##### Bold Text
+(example…)
+**The quick brown fox jumps over the lazy dog**
+(…example)
+
+```
+**The quick brown fox jumps over the lazy dog**
+```
+
+
+##### Italic Text
+(example…)
+_The quick brown fox jumps over the lazy dog_
+(…example)
+
+```
+_The quick brown fox jumps over the lazy dog_
+```
+
+##### Strikethrough Text
+(example…)
+~~The quick brown fox jumps over the lazy dog~~
+(…example)
+
+```
+~~The quick brown fox jumps over the lazy dog~~
+```
+
+#### Unordered Lists
+(example…)
+- Homer
+- Marge
+- Bart
+- Lisa
+- Maggie
+(…example)
+
+```
+- Homer
+- Marge
+- Bart
+- Lisa
+- Maggie
+```
+
+##### Horizontal Rules
+(example…)
+****
+(…example)
+
+```
+****
+```
+
+##### Code Blocks
+Blocks of code are either fenced by lines with three back-ticks or are indented with four spaces.
+(example…)
+```
+<?php
+// awesome code example
+?>
+```
+(…example)
+
+    ```
+    <?php
+    // awesome code example
+    ?>
+    ```

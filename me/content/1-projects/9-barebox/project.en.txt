@@ -1,0 +1,26 @@
+Title: The Barebox
+
+----
+
+Text: 
+
+The BareBox represented an intriguing entry into the world of companies built around the social media engine, specifically Instagram, and a first B2B product development gig we have worked on.  Sure, it's an unmanned printer, but it's so much more.   That's why we hopped on.  
+
+Prototyping was fairly straight forward, initially enlisting the help of a Raspberry Pi as a base for each working unit.  We soon found out there were certain failures in this method, and thus decided to splurge for a more compact PC as the on-site engine running the printer as well as fetching location specific images down from a robust image processing server.   
+
+The establishment facing CMS makes customization easy for the client, with analytics and templates to make tracking progress and communication tailored to the clients needs.   
+
+As with any product,  continuing work devoted to this startup will further refine the interaction and improve its usability, making it one of the more innovative contenders in the field of social printing.
+
+(image: bb1.jpg)
+(image: bb2.jpg)
+(image: bb3.png)
+(image: bb4.jpg)
+
+----
+
+Thumbimage: thumb.gif
+
+----
+
+Tags: Product,Installation,Physical Computation,Development,Network

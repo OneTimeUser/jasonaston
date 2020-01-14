@@ -1,0 +1,45 @@
+Title: The Essential (and Simple) Guide to Blogging with Purpose
+
+----
+
+Date: 2015-08-19
+
+----
+
+Author: demo
+
+----
+
+Thumbimage: news-2.jpg
+
+----
+
+Text: 
+
+Varta quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+
+Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. Praesent sed nisi eleifend, fermentum orci amet, iaculis ultricies purus. Praesent sed nisi eleifend, fermentum orci amet, iaculis ultricies purus. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
+
+###MAECENAS VOLUTPAT
+
+Praesent sed nisi eleifend, fermentum orci amet, iaculis ultricies purus. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
+
+Lorem ipsum Ea eiusmod voluptate cillum aliqua do veniam Ut quis in laborum ex ullamco aliquip labore sed reprehenderit sed Ut eu occaecat laboris exercitation Excepteur id magna deserunt cillum elit ut dolore.
+
+- Lorem ipsum Pariatur in incididunt ex.
+- Lorem ipsum Incididunt laborum dolor dolore Ut.
+- Lorem ipsum Adipisicing dolore dolor aliquip laborum nisi.
+
+(image: jurassic-wine.png class:right)
+
+Lorem ipsum Irure Excepteur qui labore deserunt dolore enim aliqua minim Duis et tempor velit eiusmod dolor irure consequat amet anim laboris laborum non ad ullamco et ea Duis ullamco Ut dolor ad fugiat Duis et pariatur nisi aute magna consequat deserunt in adipisicing laboris enim Duis enim nostrud aliquip labore velit ullamco in nisi sint tempor in et id laborum cupidatat laborum et sint incididunt sint exercitation Ut elit occaecat laboris ex deserunt est exercitation veniam aute amet irure consequat sed aliquip
+
+####CONSEQUAT AMET ANIM LABORIS
+
+Lorem ipsum Irure Excepteur qui labore deserunt dolore enim aliqua minim Duis et tempor velit eiusmod dolor irure consequat amet anim laboris laborum non ad ullamco et ea Duis ullamco Ut dolor ad fugiat Duis et pariatur nisi aute magna consequat deserunt in adipisicing laboris enim Duis enim nostrud aliquip labore velit ullamco in nisi sint tempor in et id laborum cupidatat laborum et sint incididunt sint exercitation Ut elit occaecat laboris ex deserunt est exercitation veniam aute amet irure consequat sed aliquip
+
+(image: a_happy_place.jpg class:left)
+
+Lorem ipsum Irure Excepteur qui labore deserunt dolore enim aliqua minim Duis et tempor velit eiusmod dolor irure consequat amet anim laboris laborum non ad ullamco et ea Duis ullamco Ut dolor ad fugiat Duis et pariatur nisi aute magna consequat deserunt in adipisicing laboris enim Duis enim nostrud aliquip labore velit ullamco in nisi sint tempor in et id laborum cupidatat laborum et sint incididunt sint exercitation Ut elit occaecat laboris ex deserunt est exercitation veniam aute amet irure consequat sed aliquip
+
+Lorem ipsum Irure Excepteur qui labore deserunt dolore enim aliqua minim Duis et tempor velit eiusmod dolor irure consequat amet anim laboris laborum non ad ullamco et ea Duis ullamco Ut dolor ad fugiat Duis et pariatur nisi aute magna consequat deserunt in adipisicing laboris enim Duis enim nostrud aliquip labore velit ullamco in nisi sint tempor in et id laborum cupidatat laborum et sint incididunt sint exercitation Ut elit occaecat laboris ex deserunt est exercitation veniam aute amet irure consequat sed aliquip

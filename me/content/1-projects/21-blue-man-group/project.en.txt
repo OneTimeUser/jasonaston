@@ -1,0 +1,24 @@
+Title: Blue Man Group
+
+----
+
+Text: 
+
+The Blue Man Group is by far one of the most important and progressive live, performative displays of technology in praxis to date.  Permanent shows are in various cities while traveling shows take the experience to cities around the world, unveiling interactivity to an increasing number of curious onlookers.
+
+We were approached to create light emitting suits that were networked with each other, so that the interaction between the performers could be represented live, with movement, and not have to be preprogrammed.
+
+Thematically, this coalesced with the staccatic, surprising, unexpected performance that the Blue Man Group is known for.
+
+(image:blue1.jpg)
+(image:blue2.jpg)
+(image:blue3.jpg)
+(image:blue4.jpg)
+
+----
+
+Tags: Product,Projection,Physical Computation
+
+----
+
+Thumbimage: thumb.gif

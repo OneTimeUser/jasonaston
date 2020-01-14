@@ -1,0 +1,37 @@
+Title: BFA
+
+----
+
+Text: 
+
+BFA is one of the largest boutique event focused photography agencies in the world. Chances are, you've come across their photos at some point in your digital life. Ambitious and adventurous, BFA is committed to improving their digital footprint and workflow for all stakeholders. As such, the company is situated in a complex space of b2b and consumer interaction. The various needs of their clients and customers presents certain user challenges that require elegant solutions. First and foremost, we decided on the necessity and importance of a design system to test our various U/X decisions. Working within Adobe XD, I created a grab and go design system of assets that could quickly be used to create modals, logins, menus and more. 
+
+(image: 4.png)
+(image: 5.png)
+(image: 6.png)
+(image: 7.jpg)
+(image: 8.jpg)
+(image: 9.jpg)
+(image: 10.jpg)
+(image: 11.jpg)
+
+Next, we built out some U/X necessities for some of the new modules we are creating. For this I used traditional sitemaps to show how current information and data maps into these new modules. I also used some priority maps for specific features. 
+
+(image: 1.png)
+(image: 2.png)
+(image: 3.png)
+
+Finally, we focused on a digital refresh of their current site and future properties in the works. See below for some upcoming changes that are sure to make the BFA brand feel modern and accessible. We wanted to pack in more visual enjoyment for the user while maintaining a strict gridded system. By shrinking the breathing room, we create more of a gallery focused experience with added gravitas and user consideration. 
+(Refresh is on the LEFT!)
+
+(image: 12_newmain.jpg)
+(image: 13_newsearch.jpg)
+(image: 14_newmobile.jpg)
+
+----
+
+Thumbimage: 
+
+----
+
+Tags: Design,Design System,Prototyping,Development
