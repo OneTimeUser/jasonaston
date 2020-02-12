@@ -9,6 +9,10 @@
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Corben|Quattrocento+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript">
+        let c_submitted = false;
+
+    </script>
 </head>
 
 <body>
@@ -69,28 +73,30 @@
                                 Use the form below to get in contact. We promise to answer as promptly as possible. Have you checked the <a href="pricing.html">FAQs</a> or learned about our <a href="process.html">Process</a>?
                             </p>
                         </div>
-                        <form action="/forms/smtp.php" data-form-email novalidate>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScxfgNmgv5pbiNVgFXkBhzfGZjCqwUBsXF4TGBe1-k3LAgD3w/formResponse?" name="cform" id="cform" enctype="text/plain" target="c_hidden_iframe" onsubmit="c_submitted=true;" data-form-email novalidate>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="contact-name" placeholder="Your Name" required>
+                                <input type="text" class="form-control" name="entry.2036589812" id="entry.2036589812" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="contact-email" placeholder="Email Address" required>
+                                <input type="email" class="form-control" name="entry.141188244" id="entry.141188244" placeholder="Email Address" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="contact-box-message" rows="5" class="form-control" placeholder="Type your message here" required></textarea>
+                                <textarea rows="5" class="form-control" name="entry.946742216" id="entry.946742216" placeholder="Type your message here" required></textarea>
                             </div>
-                            <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"></div>
+                            <!--                            <div data-recaptcha data-sitekey="6LcVTdgUAAAAAJ4sxLRNGPCctnQq_SCdsa3eizB6"></div>-->
                             <div class="d-none alert alert-danger" role="alert" data-error-message>
                                 Please fill all fields correctly.
                             </div>
                             <div class="d-none alert alert-success" role="alert" data-success-message>
                                 Thanks, a member of our team will be in touch shortly.
                             </div>
-                            <button type="submit" class="btn btn-block btn-primary btn-loading" data-loading-text="Sending">
+                            <button type="submit" value="Submit" class="btn btn-block btn-primary btn-loading" data-loading-text="Sending">
                             <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
                             <span>Send</span>
                           </button>
+
                         </form>
+                        <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted){}"></iframe>
                     </div>
                 </div>
             </div>
@@ -321,7 +327,7 @@
               <img src="assets/img/logo-white.svg" alt="Émigré" class="icon icon-md mb-3">
             </a>
                     <p class="pr-xl-3">
-                        A friendly credential evaluation service you can trust.
+                        A friendly credential evaluation consultation service you can trust.
                     </p>
                 </div>
                 <div class="col-4">
@@ -349,13 +355,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
+                <div id="mc_embed_signup" class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
                     <h5>Subscribe</h5>
                     <p>The latest Émigré news and resources, sent straight to your inbox.</p>
-                    <form action="/forms/mailchimp.php" data-form-email novalidate>
+                    <form action="https://thewondermob.us4.list-manage.com/subscribe/post?u=ef8e38ff75fead5fefe6065bd&amp;id=0f963ff003" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" data-form-email novalidate>
                         <div class="form-row">
                             <div class="col-12">
-                                <input type="email" class="form-control mb-2" placeholder="Email Address" name="email" required>
+                                <input type="email" class="form-control mb-2" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" required>
                             </div>
                             <div class="col-12">
                                 <div class="d-none alert alert-success" role="alert" data-success-message>
@@ -364,9 +370,13 @@
                                 <div class="d-none alert alert-danger" role="alert" data-error-message>
                                     Please fill all fields correctly.
                                 </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ef8e38ff75fead5fefe6065bd_0f963ff003" tabindex="-1" value=""></div>
+                                <!--
                                 <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft">
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending">
+-->
+                                <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending" name="subscribe" id="mc-embedded-subscribe">
                     <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
                     <span>Subscribe</span>
                   </button>
@@ -375,7 +385,28 @@
                     </form>
                     <small class="text-muted form-text">We’ll never share your details. See our <a href="utility-legal.html">Privacy Policy</a>
             </small>
+                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                    <script type='text/javascript'>
+                        (function($) {
+                            window.fnames = new Array();
+                            window.ftypes = new Array();
+                            fnames[0] = 'EMAIL';
+                            ftypes[0] = 'email';
+                            fnames[1] = 'FNAME';
+                            ftypes[1] = 'text';
+                            fnames[2] = 'LNAME';
+                            ftypes[2] = 'text';
+                            fnames[3] = 'ADDRESS';
+                            ftypes[3] = 'address';
+                            fnames[4] = 'PHONE';
+                            ftypes[4] = 'phone';
+                            fnames[5] = 'BIRTHDAY';
+                            ftypes[5] = 'birthday';
+                        }(jQuery));
+                        var $mcj = jQuery.noConflict(true);
 
+                    </script>
+                    <!--End mc_embed_signup-->
                 </div>
             </div>
             <!--
@@ -427,6 +458,16 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Form to gforms -->
+
+    <script type="text/javascript">
+        $('#cform').on('submit', function(e) {
+            $('#cform *').fadeOut(2000);
+            $('#cform').prepend('Your submission has been processed...');
+        });
+
+    </script>
 
     <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
