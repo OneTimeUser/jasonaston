@@ -9,10 +9,7 @@
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Corben|Quattrocento+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
-    <script type="text/javascript">
-        let c_submitted = false;
 
-    </script>
 </head>
 
 <body>
@@ -73,7 +70,12 @@
                                 Use the form below to get in contact. We promise to answer as promptly as possible. Have you checked the <a href="pricing.html">FAQs</a> or learned about our <a href="process.html">Process</a>?
                             </p>
                         </div>
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScxfgNmgv5pbiNVgFXkBhzfGZjCqwUBsXF4TGBe1-k3LAgD3w/formResponse?" name="cform" id="cform" enctype="text/plain" target="c_hidden_iframe" onsubmit="c_submitted=true;" data-form-email novalidate>
+                        <script type="text/javascript">
+                            let c_submitted = false;
+
+                        </script>
+                        <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted) {}"></iframe>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScxfgNmgv5pbiNVgFXkBhzfGZjCqwUBsXF4TGBe1-k3LAgD3w/formResponse?" method="post" name="cform" id="cform" enctype="text/plain" target="c_hidden_iframe" onsubmit="c_submitted=true;" data-form-email novalidate>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="entry.2036589812" id="entry.2036589812" placeholder="Your Name" required>
                             </div>
@@ -96,7 +98,7 @@
                           </button>
 
                         </form>
-                        <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted){}"></iframe>
+
                     </div>
                 </div>
             </div>
@@ -364,12 +366,11 @@
                                 <input type="email" class="form-control mb-2" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" required>
                             </div>
                             <div class="col-12">
-                                <div class="d-none alert alert-success" role="alert" data-success-message>
-                                    Thank you!
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
                                 </div>
-                                <div class="d-none alert alert-danger" role="alert" data-error-message>
-                                    Please fill all fields correctly.
-                                </div>
+
                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ef8e38ff75fead5fefe6065bd_0f963ff003" tabindex="-1" value=""></div>
                                 <!--
