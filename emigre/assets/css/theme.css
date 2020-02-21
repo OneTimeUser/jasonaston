@@ -14102,6 +14102,24 @@ h3 {
 .text-dark {
   color: black !important; }
 
+.mail-list-home {
+  background-position: top 50% left 10%, bottom 50% right 10%;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-image: url(../img/email_letter.png), url(../img/email_letter.png); }
+
+.started-home {
+  background-image: url(../img/splash.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.feel-good {
+  background-position: top 50% left 10%, bottom 50% right 10%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../img/feelinggood.png), url(../img/feelinggood.png); }
+
 .color-dangler {
   box-shadow: inset 0 -263px 0 white; }
 
