@@ -14111,11 +14111,11 @@ h3 {
 .started-home {
   background-image: url(../img/splash.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; }
+  background-position: bottom;
+  background-size: 400px; }
 
 .feel-good {
-  background-position: top 50% left -19%;
+  background-position: bottom -40% left -19%;
   background-size: 460px;
   background-repeat: no-repeat;
   background-image: url(../img/feelinggood.png), url(../img/feelinggood.png); }
