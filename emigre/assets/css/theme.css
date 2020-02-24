@@ -14115,8 +14115,8 @@ h3 {
   background-size: contain; }
 
 .feel-good {
-  background-position: top 50% left 10%, bottom 50% right 10%;
-  background-size: 150px;
+  background-position: top 50% left -19%;
+  background-size: 460px;
   background-repeat: no-repeat;
   background-image: url(../img/feelinggood.png), url(../img/feelinggood.png); }
 
