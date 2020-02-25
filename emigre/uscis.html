@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Émigré | USCIS - United States of America</title>
+    <title>Emigré | USCIS - United States of America</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Émigré, a friendly credential evaluation service you can trust.">
+    <meta name="description" content="Emigré, a friendly credential evaluation service you can trust.">
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Corben|Quattrocento+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-primary" data-sticky="top">
             <div class="container">
                 <a class="navbar-brand fade-page" href="index.html">
-            <img src="assets/img/logo.svg" alt="Émigré" class="icon icon-md">
+            <img src="assets/img/logo.svg" alt="Emigré" class="icon icon-md">
           </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
@@ -179,7 +179,7 @@
 
 
                             <h6>Disclaimer</h6>
-                            <small>Émigré does not make any promises regarding acceptance or denial of any person's application. While we have knowledge of the application process as well as maximizing one's application, we cannot guarantee that the applicant's documents will be accepted, nor do we claim so. We also cannot guarantee that the applicant will be accepted by the country of application.</small>
+                            <small>Emigré does not make any promises regarding acceptance or denial of any person's application. While we have knowledge of the application process as well as maximizing one's application, we cannot guarantee that the applicant's documents will be accepted, nor do we claim so. We also cannot guarantee that the applicant will be accepted by the country of application.</small>
                             <hr>
 
                         </div>
@@ -193,7 +193,7 @@
             <div class="row justify-content-between mb-5 text-center">
                 <div class="col-md-4 text-md-left">
                     <a href="index.html">
-              <img src="assets/img/logo-white.svg" alt="Émigré" class="icon icon-md mb-3">
+              <img src="assets/img/logo-white.svg" alt="Emigré" class="icon icon-md mb-3">
             </a>
                     <p class="pr-xl-3">
                         A friendly credential evaluation consultation service you can trust.
@@ -226,7 +226,7 @@
                 </div>
                 <div id="mc_embed_signup" class="col-md-4 text-md-left">
                     <h5>Subscribe</h5>
-                    <p>The latest Émigré news and resources, sent straight to your inbox.</p>
+                    <p>The latest Emigré news and resources, sent straight to your inbox.</p>
                     <form action="https://thewondermob.us4.list-manage.com/subscribe/post?u=ef8e38ff75fead5fefe6065bd&amp;id=0f963ff003" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div class="form-row">
                             <div class="col-12">
@@ -311,7 +311,7 @@
 -->
             <div class="row justify-content-center">
                 <div class="col col-md-auto text-center">
-                    <small class="text-muted">&copy;2020 All Rights Reserved. Émigré® is a registered trademark of WM Inc. <a href="https://icons8.com/ouch">Illustrations by Ouch</a></small>
+                    <small class="text-muted">&copy;2020 All Rights Reserved. Emigré® is a registered trademark of WM Inc. <a href="https://icons8.com/ouch">Illustrations by Ouch</a></small>
                 </div>
             </div>
         </div>
@@ -324,11 +324,15 @@
     <!-- Form to gforms -->
     <script type="text/javascript">
         $('#cform').on('submit', function(e) {
+            setTimeout(function() {
+                if (c_formHide) {
+                    $('#cform *').fadeOut(2000);
+                    $('#cform').prepend('Your submission has been processed...');
+                }
 
-            if (c_formHide) {
-                $('#cform *').fadeOut(2000);
-                $('#cform').prepend('Your submission has been processed...');
-            }
+            }, 500);
+
+
         });
 
     </script>

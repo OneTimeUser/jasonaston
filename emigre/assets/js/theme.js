@@ -4342,13 +4342,21 @@
           this.feedback.error.innerHTML = (errorHTTP || text) + ": <em>\"" + this.action + "\"</em> (" + status.status + " " + text + ")";
           this.feedback.error.classList.remove(ClassName.D_NONE);
         } else {
-          this.feedback[status].innerHTML = text;
-          this.feedback[status].classList.remove(ClassName.D_NONE);
-          c_formHide = true;
-
-          if (typeof g_formHide !== 'undefined' || g_formHide !== null) {
+          if (this.form.id == 'cform') {
+            c_formHide = true;
+          } else {
             g_formHide = true;
-          }
+          } //                if (this.feedback[status] != 'undefined') {
+          //                    this.feedback[status].innerHTML = text;
+          //                    this.feedback[status].classList.remove(ClassName.D_NONE);
+          //                }
+          //
+          //                c_formHide = true;
+          //
+          //                if (typeof g_formHide !== 'undefined' || g_formHide !== null) {
+          //                    g_formHide = true;
+          //                }
+
         }
       };
 

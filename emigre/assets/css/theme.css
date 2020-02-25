@@ -14103,7 +14103,7 @@ h3 {
   color: black !important; }
 
 .mail-list-home {
-  background-position: top 50% left 10%, bottom 50% right 10%;
+  background-position: top 31% left 10%, top 31% right 10%;
   background-size: 100px;
   background-repeat: no-repeat;
   background-image: url(../img/email_letter.png), url(../img/email_letter.png); }
