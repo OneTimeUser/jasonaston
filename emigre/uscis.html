@@ -72,10 +72,11 @@
                         </div>
                         <script type="text/javascript">
                             let c_submitted = false;
+                            let c_forHide = false;
 
                         </script>
                         <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted) {}"></iframe>
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScxfgNmgv5pbiNVgFXkBhzfGZjCqwUBsXF4TGBe1-k3LAgD3w/formResponse" method="post" name="cform" id="cform" target="c_hidden_iframe" onsubmit="c_submitted=true;" novalidate>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScxfgNmgv5pbiNVgFXkBhzfGZjCqwUBsXF4TGBe1-k3LAgD3w/formResponse" method="post" name="cform" id="cform" target="c_hidden_iframe" onsubmit="c_submitted=true;" novalidate data-form-email>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="entry.2036589812" id="entry.2036589812" placeholder="Your Name" required>
                             </div>
@@ -323,8 +324,11 @@
     <!-- Form to gforms -->
     <script type="text/javascript">
         $('#cform').on('submit', function(e) {
-            $('#cform *').fadeOut(2000);
-            $('#cform').prepend('Your submission has been processed...');
+
+            if (c_formHide) {
+                $('#cform *').fadeOut(2000);
+                $('#cform').prepend('Your submission has been processed...');
+            }
         });
 
     </script>

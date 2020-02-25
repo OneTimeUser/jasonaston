@@ -4337,13 +4337,18 @@
         this.toggleFormLoading(false); // If this is an ajax error from jQuery, 'status' will be
         // an object with statusText property
 
-        if (typeof status === 'object' && status.statusText) {
+        if (typeof status === 'object' && status.statusText && status.status !== 0) {
           clearTimeout(this.feedbackTimeout);
           this.feedback.error.innerHTML = (errorHTTP || text) + ": <em>\"" + this.action + "\"</em> (" + status.status + " " + text + ")";
           this.feedback.error.classList.remove(ClassName.D_NONE);
         } else {
           this.feedback[status].innerHTML = text;
           this.feedback[status].classList.remove(ClassName.D_NONE);
+          c_formHide = true;
+
+          if (typeof g_formHide !== 'undefined' || g_formHide !== null) {
+            g_formHide = true;
+          }
         }
       };
 

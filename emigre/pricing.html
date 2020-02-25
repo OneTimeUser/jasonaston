@@ -72,6 +72,7 @@
                         </div>
                         <script type="text/javascript">
                             let c_submitted = false;
+                            let c_formHide = false;
 
                         </script>
                         <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted) {}"></iframe>
@@ -589,8 +590,10 @@
 
     <script type="text/javascript">
         $('#cform').on('submit', function(e) {
-            $('#cform *').fadeOut(2000);
-            $('#cform').prepend('Your submission has been processed...');
+            if (c_formHide) {
+                $('#cform *').fadeOut(2000);
+                $('#cform').prepend('Your submission has been processed...');
+            }
         });
 
     </script>

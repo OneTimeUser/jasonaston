@@ -14115,10 +14115,10 @@ h3 {
   background-size: 400px; }
 
 .feel-good {
-  background-position: bottom -40% left -19%;
+  background-position: bottom -16% left -19%;
   background-size: 460px;
   background-repeat: no-repeat;
-  background-image: url(../img/feelinggood.png), url(../img/feelinggood.png); }
+  background-image: url(../img/feelinggood.png); }
 
 .color-dangler {
   box-shadow: inset 0 -263px 0 white; }

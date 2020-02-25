@@ -72,10 +72,11 @@
                         </div>
                         <script type="text/javascript">
                             let c_submitted = false;
+                            let c_formHide = false;
 
                         </script>
                         <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted) {}"></iframe>
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScxfgNmgv5pbiNVgFXkBhzfGZjCqwUBsXF4TGBe1-k3LAgD3w/formResponse" method="post" name="cform" id="cform" target="c_hidden_iframe" onsubmit="c_submitted=true;" novalidate>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScxfgNmgv5pbiNVgFXkBhzfGZjCqwUBsXF4TGBe1-k3LAgD3w/formResponse" method="post" name="cform" id="cform" target="c_hidden_iframe" onsubmit="c_submitted=true;" novalidate data-form-email>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="entry.2036589812" id="entry.2036589812" placeholder="Your Name" required>
                             </div>
@@ -120,11 +121,12 @@
                         </p>
                     </div>
                     <script type="text/javascript">
-                        let submitted = false;
+                        let g_submitted = false;
+                        let g_formHide = false;
 
                     </script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-                    <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScfOTTCEXZpATUUsnVs4xkyhEvDTW5i4jp1LJIpiUWWIoBrYA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" novalidate>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(g_submitted) {}"></iframe>
+                    <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScfOTTCEXZpATUUsnVs4xkyhEvDTW5i4jp1LJIpiUWWIoBrYA/formResponse" method="post" target="hidden_iframe" onsubmit="g_submitted=true;" novalidate data-form-email>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -180,11 +182,11 @@
                             <div class="form-row col-12">
                                 <div class="form-group col-md-4">
                                     <label>School Name</label>
-                                    <input id="entry.1756045487" type="text" name="entry.1756045487" class="form-control" placeholder=" University 1">
+                                    <input id="entry.1756045487" type="text" name="entry.1756045487" class="form-control" placeholder=" School 1">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Country</label>
-                                    <input id="entry.1678732064" type="text" name="entry.1678732064" class="form-control" placeholder=" Country 1">
+                                    <input id="entry.1678732064" type="text" name="entry.1678732064" class="form-control" placeholder="USA">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Degree type</label>
@@ -200,19 +202,19 @@
 
                                 <div class="form-group col-md-4">
                                     <label>School Name</label>
-                                    <input id="entry.891421002" type="text" class="form-control" name="entry.891421002" placeholder=" University 2 - optional">
+                                    <input id="entry.891421002" type="text" class="form-control" name="entry.891421002" placeholder=" School 2 - optional">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Country</label>
-                                    <input id="entry.972046177" type="text" class="form-control" name="entry.972046177" placeholder=" Country 2 - optional">
+                                    <input id="entry.972046177" type="text" class="form-control" name="entry.972046177" placeholder=" ">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Degree type</label>
-                                    <input id="entry.1500272401" type="text" class="form-control" name="entry.1500272401" placeholder=" Degree 2 - optional">
+                                    <input id="entry.1500272401" type="text" class="form-control" name="entry.1500272401" placeholder=" ">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Year</label>
-                                    <input id="entry.2059836154" type="text" class="form-control" name="entry.2059836154" placeholder=" Year 2 - optional">
+                                    <input id="entry.2059836154" type="text" class="form-control" name="entry.2059836154" placeholder=" ">
                                 </div>
                             </div>
                             <div class="form-row col-12">
@@ -223,15 +225,15 @@
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Country</label>
-                                    <input id="entry.1704082187" type="text" class="form-control" name="entry.1704082187" placeholder=" Country 3 - optional">
+                                    <input id="entry.1704082187" type="text" class="form-control" name="entry.1704082187" placeholder="">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Degree type</label>
-                                    <input id="entry.519341952" type="text" class="form-control" name="entry.519341952" placeholder=" Degree 3 - optional">
+                                    <input id="entry.519341952" type="text" class="form-control" name="entry.519341952" placeholder="">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Year</label>
-                                    <input id="entry.1660938158" type="text" class="form-control" name="entry.1660938158" placeholder=" Year 3 - optional">
+                                    <input id="entry.1660938158" type="text" class="form-control" name="entry.1660938158" placeholder="">
                                 </div>
                             </div>
                             <div class="form-row col-12">
@@ -241,15 +243,15 @@
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Country</label>
-                                    <input id="entry.1180745539" type="text" name="entry.1180745539" class="form-control" placeholder=" Country 4 - optional">
+                                    <input id="entry.1180745539" type="text" name="entry.1180745539" class="form-control" placeholder="">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Degree type</label>
-                                    <input id="entry.614827428" type="text" name="entry.614827428" class="form-control" placeholder=" Degree 4 - optional">
+                                    <input id="entry.614827428" type="text" name="entry.614827428" class="form-control" placeholder="">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Year</label>
-                                    <input id="entry.1200433632" type="text" name="entry.1200433632" class="form-control" placeholder=" Year 4 - optional">
+                                    <input id="entry.1200433632" type="text" name="entry.1200433632" class="form-control" placeholder="">
                                 </div>
                             </div>
                             <div class="form-row col-12">
@@ -259,15 +261,15 @@
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Country</label>
-                                    <input id="entry.682124049" type="text" name="entry.682124049" class="form-control" placeholder=" Country 5 - optional">
+                                    <input id="entry.682124049" type="text" name="entry.682124049" class="form-control" placeholder="">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>Degree type</label>
-                                    <input id="entry.614748842" type="text" name="entry.614748842" class="form-control" placeholder=" Degree 5 - optional">
+                                    <input id="entry.614748842" type="text" name="entry.614748842" class="form-control" placeholder="">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label>Year</label>
-                                    <input id="entry.1511800463" type="text" name="entry.1511800463" class="form-control" placeholder=" Year 5 - optional">
+                                    <input id="entry.1511800463" type="text" name="entry.1511800463" class="form-control" placeholder="">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -440,12 +442,16 @@
 
     <script type="text/javascript">
         $('#gform').on('submit', function(e) {
-            $('#gform *').fadeOut(2000);
-            $('#gform').prepend('Your submission has been processed...');
+            if (g_formHide) {
+                $('#gform *').fadeOut(2000);
+                $('#gform').prepend('Your submission has been processed...');
+            }
         });
         $('#cform').on('submit', function(e) {
-            $('#cform *').fadeOut(2000);
-            $('#cform').prepend('Your submission has been processed...');
+            if (c_formHide) {
+                $('#cform *').fadeOut(2000);
+                $('#cform').prepend('Your submission has been processed...');
+            }
         });
 
     </script>
