@@ -497,12 +497,7 @@
                                 <input type="email" class="form-control mb-2" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" required>
                             </div>
                             <div class="col-12">
-                                <div id="mce-responses" class="clear">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ef8e38ff75fead5fefe6065bd_0f963ff003" tabindex="-1" value=""></div>
+
                                 <!--
                                 <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft">
                                 </div>
@@ -516,6 +511,13 @@
                     </form>
                     <small class="text-muted form-text">We’ll never share your details. See our <a href="utility-legal.html">Privacy Policy</a>
             </small>
+                    <div class="">
+                        <div id="mce-responses" class="clear">
+                            <div class="response alert alert-danger" id="mce-error-response" style="display:none"></div>
+                            <div class="response alert alert-success" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ef8e38ff75fead5fefe6065bd_0f963ff003" tabindex="-1" value=""></div>
+                    </div>
                     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
                     <script type='text/javascript'>
                         (function($) {
@@ -593,10 +595,10 @@
             setTimeout(function() {
                 if (c_formHide) {
                     $('#cform *').fadeOut(2000);
-                    $('#cform').prepend('Your submission has been processed...');
+                    $('#cform').prepend('<p class="alert-success">Thank you! Your submission has been processed...</p>');
                 }
 
-            }, 500);
+            }, 1000);
 
 
         });
@@ -608,29 +610,26 @@
     <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
     <script type="text/javascript" src="assets/js/aos.js"></script>
     <!-- Clipboard (copies content from browser into OS clipboard) -->
-    <script type="text/javascript" src="assets/js/clipboard.js"></script>
     <!-- Fancybox (handles image and video lightbox and galleries) -->
-    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!--    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>-->
     <!-- Flatpickr (calendar/date/time picker UI) -->
-    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!--    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>-->
     <!-- Flickity (handles touch enabled carousels and sliders) -->
-    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!--    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>-->
     <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
-    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!--    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>-->
     <!-- Isotope (masonry layouts and filtering) -->
     <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
     <!-- jarallax (parallax effect and video backgrounds) -->
     <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
     <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
     <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
-    <!-- jQuery Countdown (displays countdown text to a specified date) -->
-    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
     <!-- jQuery smartWizard facilitates steppable wizard content -->
     <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
     <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
-    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!--    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>-->
     <!-- Prism (displays formatted code boxes) -->
-    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!--    <script type="text/javascript" src="assets/js/prism.js"></script>-->
     <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
     <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
     <!-- Smooth scroll (animation to links in-page)-->
@@ -638,9 +637,8 @@
     <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
     <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
     <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
-    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
-    <!-- Typed text (animated typing effect)-->
-    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!--    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>-->
+
     <!-- Required theme scripts (Do not remove) -->
     <script type="text/javascript" src="assets/js/theme.js"></script>
     <!-- Removes page load animation when window is finished loading -->
