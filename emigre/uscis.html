@@ -327,17 +327,16 @@
 
     <script type="text/javascript">
         $('#cform').on('submit', function(e) {
-                    setTimeout(function() {
-                            if (c_formHide) {
-                                $('#cform *').fadeOut(2000);
-                                $('#cform').prepend(' <
-                                    p class = "alert-success" > Thank you!Your submission has been processed... < /p>');
-                                }
+            setTimeout(function() {
+                if (c_formHide) {
+                    $('#cform *').fadeOut(2000);
+                    $('#cform').prepend('<p class="alert-success"> Thank you!Your submission has been processed... </p>');
+                }
 
-                            }, 1000);
+            }, 1000);
 
 
-                    });
+        });
 
     </script>
 
