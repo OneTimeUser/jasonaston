@@ -1,0 +1,25 @@
+Title: Week 02-2:HTML
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Lecture**
+
+Today we addressed the `a` element and it's possible actions and references (`href`).
+It can
+-link to another page (via absolute or relative url's)
+-link to another section of the same page or another page (using `#*idname*` so long as the section contains an addressable `id` attribute)
+-email (`emailto:email@email.com` link)
+-open a new window (`target="_blank"` attribute) or a new tab - depending on browser settings.
+
+We also learned how to traverse a directory in and out.  
+
+(file: class2-2.pdf text:Download lecture slides)
+
+**Homework**
+Read Chapters 5 and 6

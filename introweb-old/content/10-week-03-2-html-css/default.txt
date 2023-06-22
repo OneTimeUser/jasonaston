@@ -1,0 +1,22 @@
+Title: Week 03-2:HTML/CSS
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Lecture**
+We rounded out some of our HTML knowledge today with some important elements, namely the `div` and `span` elements.  These are versatile  elements you will use often.  
+
+We also addressed `<!DOCTYPE html>` for letting the browser know we are using HTML5. We added certain `<meta>` elements to describe our webpage more fully. 
+
+I showed you how to use comments `<!-- comments -->` and went over two very important attributes to further locate and address certain elements: `id=""` and `class=""` as well as why we would either/or/both.  Finally we finished class with a taste of CSS, exercising some control over our fonts.
+
+All of this comes from Chapter 8 and 12 in your book so read these chapters for more in depth knowledge.
+
+**Reading/Assignment**
+(link: http://www.jason-aston.com/introweb/assignments/html-assignment-2/text: Assignment-2: HTML)
+Please read Chapters 10 and 11 in the book.

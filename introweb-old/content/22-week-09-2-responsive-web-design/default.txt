@@ -1,0 +1,15 @@
+Title: Week 09-2:Responsive Web Design
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Lecture:**
+Today we talked about media queries and the various uses of them in working traditional desktop first design and mobile first design. We discussed the various logic behind breakpoints- the device widths in which css design alterations are activated. 
+
+**Slides:**
+(file: responsive.pdf text:Download presentation here)

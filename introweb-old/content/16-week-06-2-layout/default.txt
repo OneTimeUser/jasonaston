@@ -1,0 +1,46 @@
+Title: Week 06-2:Layout
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Lecture:**
+Today we reviewed the following:
+Float- especially as they pertain to creating informal grid systems.
+Position- and the distinction between relative, absolute, and fixed.
+Clear- handy when elements are floated but you need to clear that float. 
+`<element>:nth-child(<expression>){*css styles here*}` - This allows us to target specific children of a group. So for example:
+
+`#boxes box:nth-child(5){*css styles here*}`will ONLY target the 5th child box in the boxes container with `id="boxes".`
+
+`#boxes box:nth-child(5n+5){*css styles here*}` will target **every** 5th child (`n` always starts off at 0 and counts up) box in the boxes container with `id="boxes".`
+
+View a fixed and fluid layout (link: http://cims.nyu.edu/~aston/fixed.html text: here) and (link: http://cims.nyu.edu/~aston/fluid.html text: here). Fixed uses pixels for width (and height) while fluid uses percentages (or em's).
+
+(link: http://cims.nyu.edu/~aston/i-love-ny/ text: View the current iteration of the "I love NY" site.)
+
+We also went over more modern and recent innovations in developing different types of gird systems, flexbox and grid.
+
+Flexbox is ONE dimensional, meaning flexibility is primarily based on either a column or row orientation. This is useful for layouts that need flexibility but not strictness. This also means it's good for smaller sections that use content boxes that flow together.
+
+Grid is TWO dimensional, meaning you can target the grid by row and columns with ease and control. This is primarily useful for big picture layouts with more control over placement and strict responsiveness. 
+
+Ideally they can be used together for different reasons rather than compete for the same function.
+
+Examples (please inspect the code and use it in your own projects!):
+(link: http://cims.nyu.edu/~aston/flex_grid.html text: flex and grid 1)
+(link: http://cims.nyu.edu/~aston/flex_grid2.html text: flex and grid 2)
+(link: http://cims.nyu.edu/~aston/flex1.html text: flex 1)
+(link: http://cims.nyu.edu/~aston/flex2.html text: flex 2)
+(link: http://cims.nyu.edu/~aston/flex3.html text: flex 3)
+(link: http://cims.nyu.edu/~aston/grid1.html text: grid 1)
+(link: http://cims.nyu.edu/~aston/grid2.html text: grid 2)
+(link: http://cims.nyu.edu/~aston/grid3.html text: grid 3)
+The same layout built with (link: http://cims.nyu.edu/~aston/layout-flex text: flex ) and (link: http://cims.nyu.edu/~aston/layout-grid text: grid).
+
+Learn more about flex (link: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ text: here).
+Learn more about grid (link: https://css-tricks.com/snippets/css/complete-guide-grid/ text: here).

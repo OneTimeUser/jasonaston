@@ -1,0 +1,137 @@
+Title: Week 14-1:Javascript
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+Javascript!!!!
+
+We know how to write jQuery. Let's see just how we might begin to write Javascript.  Javascript can be interpreted by the browser just within the `<script>` tag. 
+
+As we introduce this, its important to understand how to structure what it is that we want to do. 
+To do this, let me introduce you to a javascript object called the `Date()` object. 
+
+`Date()`
+
+When you instantiate the `Date()` object, it returns something like this: `Tue Dec 05 2017 08:55:25 GMT-0500 (EST)`
+
+So let's begin by setting up some code:
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script
+<script>
+$('p').html(Date());
+</script>
+
+</body>
+</html>
+```
+If we want to anything more fancy, we need to have the ability to store the date object so we can manipulate or handle it a bit easier and in a more efficient way. 
+We do that using variables- variables STORE bits of information so that we can more easily use it in our programming.
+```
+var d = new Date();
+$('p').html(d);
+```
+So the variable `d` has stored the Date() object. 
+When you create a Date() object, there are a number of methods (functions) that come along with it. This is similar to JQuery. We saw all of the methods associated with a JQuery object. The function `toDateString()` is a method of the `Date()` object. This displays the date object in a more readable form.
+```
+var d = new Date();
+$('p').html(d.toDateString());
+```
+
+But we can actually explore these methods a bit further and get and display precisely what it is we want to display:
+
+`getDate()`	Get the day as a number (1-31)
+`getDay()`	Get the weekday as a number (0-6)
+`getFullYear()`	Get the four digit year (yyyy)
+`getHours()`	Get the hour (0-23)
+`getMilliseconds()`	Get the milliseconds (0-999)
+`getMinutes()`	Get the minutes (0-59)
+`getMonth()`	Get the month (0-11)
+`getSeconds()`	Get the seconds (0-59)
+`getTime()`	Get the time (milliseconds since January 1, 1970)
+
+So that's the date object. Now in order to program some interactivity and behavior, we need things to happen on conditions. And one way we program for conditions is using if statements. You can think about it in a very simple way. We want something to happen, IF a condition exists. So for example, the pseudocode would look something like:
+
+```
+if it's later than 6 pm, display 'Good Evening'.
+if it's later that noon, display 'Good Afternoon'.
+etc.
+```
+So let's look at that example in actual javascript code:
+```
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+greeting = 'Good Evening';
+} else if (hourNow>12) {
+greeting = 'Good Afternoon';
+} else if (hourNow>0) {
+greeting = 'Good Morning';
+} else { greeting = 'Welcome'}
+
+$('p').text(greeting);
+
+```
+
+Here are some other javascript essentials to help you craft even more elaborate code.
+
+Variables
+```
+var students; // initialize a variable
+students = 38; // assign variable a value
+
+var students = 38;
+// variable names can only consist of letters, numbers, underscore, and $ sign
+// variable names can only start with letters, $ sign, or underscore (not number)
+// variable names are case-sensitive
+
+var academicYear;
+```
+
+Data Types
+```
+// Numeric
+ academicYear = 2017;
+
+ // String
+ var student = 'Anne Mai';
+
+ // Boolean
+ var graduating = True;
+
+ // Undefined
+ var major;
+
+// Null
+var dorm = '';
+```
+
+ Operators 
+```
+// Assignment operator
+// = to assign a value to a variable
+
+// Math operators
+// +, -, *, /, ++, --, %
+
+// String operator
+// + to combine strings together
+
+// Comparison operators
+// >, <, ==, ===
+
+// Logical opertors
+// && (logical AND)
+// || (logical OR)
+// ! (logical NOT)

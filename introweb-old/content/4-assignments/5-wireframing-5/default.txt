@@ -1,0 +1,46 @@
+Title: Wireframing-5
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Wireframing**
+In this assignment, you will decide on a concept for your next website, draw a site map, create a website wireframe, and prototype it with HTML and CSS. This design will serve as the basis for the current assignment and the next.
+
+**Part 1**
+Whereas your first website was about you or some other topic, this one should be about a topic of an or another interest—your major, sports, etc. Try not to be too broad—the more specific the topic the better. Some examples include a hobby or collection, a specific type of food, a subculture you’re familiar with, or a place that you have specific knowledge about. Once you’ve decided what your website will be about, write a paragraph of at least 100 words describing your topic and how it will be presented on the Web.
+
+**Part 2**
+Once you have a sense of what your website will be about, draw a site map of its navigational structure. Your site map should include at least four web pages and clearly demonstrate the relationship between these pages. Annotate each page with a short description of its content and draw lines to represent links between pages. When you have completed your site map, take a picture of it or scan it so that you have a digital image of your work.
+
+**Part 3**
+Using pencil and paper or collage, create a page layout that represents the design layout of your next website. This is an opportunity for you to make design decisions before applying them with code. The layout should include text, images, and navigation. You need not concern yourself with specific content at this stage; instead, focus on the arrangement of compositional elements on the page. You’re welcome to use the same general layout for every page of the site; if you choose to vary the layout for different pages, create a separate wireframe for each. When you have completed your handmade wireframe, take a picture of it or scan it so that you have a digital image of your work.
+
+**Part 4**
+Now that you have an idea of what your layout should look like, prototype a single web page with HTML and CSS. Prepare actual text and image content for the page (preferably your own, original content but feel free to draw from other sources as well). For this assignment you will only be coding one page of the site. Therefore, use “null” links for the navigation by giving the href attributes a value of "#". Your goal is to translate the drawing/collage you made in part 3 with HTML and CSS code and text and image content. To that end, you should incorporate the CSS float property into your styles in some way and clear it as necessary.
+
+**Publishing Your Page**
+Upload your prototypal web page from part 4 to the i6 Unix server in its own, “wireframe” directory. Test your files again once they are “live” on the Web server to make sure they are accessible. Update your assignments directory to link to this page.
+
+**Submitting Your Assignment**
+Submit the following via NYU Classes. More information on submitting files with NYU Classes is also available here.
+
+The text description of your topic and website (part 1)—copied and pasted in the assignment text box
+A digital photo or scan of your site map (part 2)
+A digital photo or scan of your handmade wireframe (part 3)
+The URL to your prototypal web page on i6 (part 4)
+A compressed archive containing all the files of your prototypal web page (part 4)
+
+**Grading**
+This assignment is worth 10 points.
+
+Text description of at least 100 words of the student’s website topic (2 points)
+A digital image of the student’s site map drawing (2 points)
+A digital image of the student’s handmade website wireframe (2 points)
+The handmade wireframe should thoughtfully represent the layout of text, image, and navigation (1 point)
+A single-page prototype of the wireframe, published to i6, that translates the drawing into HTML and CSS (2 points)
+The CSS float property should be applied to the layout in some way and cleared as necessary (1 point)

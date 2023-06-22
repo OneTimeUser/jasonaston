@@ -1,0 +1,16 @@
+Title: Week 08-1:Design and Wireframes
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+**Lecture: **
+
+Today we explored what goes into planning a website with specific reference to sitemaps and wireframes of various fidelity. We also explored various design aesthetics and templates. Design of a website can be tailored to a user (mostly) or can take the shape of something more artistic, serving the unique needs of the content.  
+
+**Slides:**
+(file:design_wires.pdf text: download slides)
