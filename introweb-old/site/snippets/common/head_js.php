@@ -1,1 +1,0 @@
-<!--[if lte IE 8]><?php echo js('assets/js/ie/html5shiv.js') ?><![endif]-->

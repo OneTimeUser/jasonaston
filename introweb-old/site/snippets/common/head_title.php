@@ -1,1 +1,0 @@
-<?php e($page->isHomePage() or $page->isErrorPage(), $site->title(), $page->title() .' - ' . $site->title());
