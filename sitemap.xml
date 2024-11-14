@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  
+  <url>
+    <loc>/404/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/esbuild.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/fullDate.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/getRandom.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/groupBy.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/hasTag.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/image.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/lightningcss.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/markdownify.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/setVar.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/slayWidows.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/sortBy.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/style.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/_utilities/where.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_base/@media.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_base/@root.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_base/_base.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_base/elements.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_base/fonts.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_components/_components.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_components/button.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_components/card.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_components/logo.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_components/scroll-sentinel.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_components/small-details.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/_utilities.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/animate.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/border.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/color.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/display.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/flex.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/grid.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/space.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/text.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/main.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/js/_elements/animate-on-scroll.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/js/_elements/scroll-sentinel.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/js/_elements/small-details.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/js/app.js</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/orig/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/assets/css/_utilities/custom.css</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/projects/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/teaching/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/projects/nickelodeon/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/projects/bfa/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/projects/moon/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/projects/p2p/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/projects/mtv/</loc>
+  </url>
+  
+
+</urlset>
