@@ -49,7 +49,7 @@
 </section>
 
 <div id="back-button">
-  <a href="/projects"><img src="/assets/images/icons/back-arrow-light.svg"></a>
+  <img src="/assets/images/icons/back-arrow-light.svg">
 </div>
 
 
@@ -101,7 +101,11 @@
 
 
 </main>
-
+<script>
+  document.getElementById("back-button").addEventListener("click", function () {
+    window.history.back();
+  });
+</script>
     </animate-on-scroll>
 
   </body>
