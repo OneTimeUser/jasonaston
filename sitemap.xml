@@ -237,12 +237,6 @@
 
   
   <url>
-    <loc>/</loc>
-  </url>
-  
-
-  
-  <url>
     <loc>/orig/</loc>
   </url>
   
@@ -256,12 +250,6 @@
   
   <url>
     <loc>/projects/</loc>
-  </url>
-  
-
-  
-  <url>
-    <loc>/teaching/</loc>
   </url>
   
 
@@ -304,6 +292,18 @@
   
   <url>
     <loc>/projects/aabode/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+
+  
+  <url>
+    <loc>/teaching/</loc>
   </url>
   
 
